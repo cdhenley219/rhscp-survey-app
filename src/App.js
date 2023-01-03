@@ -1,4 +1,3 @@
-import SurveySelections from "./SurveySelections/SurveySelections";
 import SurveySelection from "./SurveySelections/SurveySelection";
 
 function App() {
