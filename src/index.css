@@ -1,13 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans:ital,wght@0,400;0,600;1,500&display=swap');
+
+/*
+ * Project Colors:
+ * Orange - #bf3e13
+ * Green - #85ab15
+ * Blue - #1690b5
+ * White - #ffffff
+ */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  margin: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.survey-selections-item {
+  background-color: #fcd1bc;
+  padding: 20px;
+  margin: 10px;
+}
+
+.survey-selections-item__links {
+  padding: 5px;
+  background-color: white;
+}
+
+.survey-selections-item__links a {
+  text-decoration: none;
+}
+
+.survey-selection-image {
+  position: relative;
+}
+
+.survey-selection-image__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+.base-image {
+  width: 100%;
+  height: 100%;
+}
+
+.grades-image {
+  position: relative;
+}
+
+.grades-image__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 1200px) { 
+  .survey-selection-image__title {
+    font-size: 72px;
+  }
+
+  .grades-image__title {
+    font-size: 20px;
+  }
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) { 
+  .survey-selection-image__title {
+    font-size: 48px;
+  }
+
+  .grades-image__title {
+    font-size: 18px;
+  }
+
+}
+
+
+@media screen and (min-width: 992px)  { 
+  .survey-selections {
+    display: flex;
+    justify-content: center;
+  } 
+
+  .survey-selections-item {
+    flex-basis: 50%;   
+    display: flex;
+  }
+
+
+  .survey-selections-item__image {
+    flex-basis: 80%;
+  }
+
+  .survey-selections-item__links {
+    flex-basis: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+  .survey-selection-image__title {
+    font-size: 72px;
+  }
+
+  .grades-image__title {
+    font-size: 20px;
+  }
+
+  .survey-selections-item {
+    display: flex;
+  }
+
+  .survey-selections-item__image {
+    flex-basis: 80%;
+  }
+
+  .survey-selections-item__links {
+    display: block;
+    flex-basis: 20%;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+  .survey-selection-image__title {
+    font-size: 48px;
+  }
+
+  .grades-image__title {
+    font-size: 18px;
+  }
+
+  .survey-selections-item__links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .grades-image {
+    width: 100px;
+    height: 100px;
+  }
 }
