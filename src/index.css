@@ -17,7 +17,7 @@ body {
 .survey-selections-item {
   background-color: #fcd1bc;
   padding: 20px;
-  margin: 10px;
+  margin: 15px;
 }
 
 .survey-selections-item__links {
@@ -25,8 +25,14 @@ body {
   background-color: white;
 }
 
+
 .survey-selections-item__links a {
   text-decoration: none;
+}
+
+.survey-selections-item__links_title {
+  text-align: center;
+  font-weight: bold;
 }
 
 .survey-selection-image {
@@ -40,6 +46,7 @@ body {
   transform: translate(-50%, -50%);
   font-weight: bold;
   color: #ffffff;
+  background-color: rgba(191, 62, 19, 0.5);
   text-align: center;
 }
 
@@ -98,7 +105,6 @@ body {
     display: flex;
   }
 
-
   .survey-selections-item__image {
     flex-basis: 80%;
   }
@@ -117,10 +123,6 @@ body {
     font-size: 72px;
   }
 
-  .grades-image__title {
-    font-size: 20px;
-  }
-
   .survey-selections-item {
     display: flex;
   }
@@ -133,6 +135,10 @@ body {
     display: block;
     flex-basis: 20%;
   }
+
+  .grades-image__title {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) { 
@@ -140,18 +146,18 @@ body {
     font-size: 48px;
   }
 
-  .grades-image__title {
-    font-size: 18px;
-  }
-
-  .survey-selections-item__links {
+  .survey-selections-item__links_content{
     display: flex;
-    align-items: flex-end;
     justify-content: center;
+    align-items: flex-end;
   }
 
   .grades-image {
     width: 100px;
     height: 100px;
+  }
+
+  .grades-image__title {
+    font-size: 18px;
   }
 }

@@ -1,21 +1,18 @@
-import GradesImage from '../GradesImage';
+import GradesImageLink from './GradesImageLink';
 import SurveySelectionImage from './SurveySelectionImage';
-import { Link } from "react-router-dom";
 
-
-const SurveySelection = () => {
+const SurveySelection = ({title, imageName}) => {
     return (
         <div className="survey-selections-item">
             <div className="survey-selections-item__image">
-                <SurveySelectionImage id="1672679413278" title="Find the Foodie"/>
+                <SurveySelectionImage name={imageName} title={title}/>
             </div>
             <div className="survey-selections-item__links">
-                <Link to="/">
-                    <GradesImage name="apple" />
-                </Link>
-                <Link to="/">
-                    <GradesImage name="board" />
-                </Link>
+                <div className="survey-selections-item__links_title">Select an Assessment</div>
+                <div className="survey-selections-item__links_content">
+                    <GradesImageLink name="apple"/>
+                    <GradesImageLink name="board"/>
+                </div>
             </div>
         </div>
     );

@@ -5,12 +5,12 @@ function App() {
   return (
     <div className="App">
       <div className="survey-selections">
-        <SurveySelection/>
-        <SurveySelection/>
+        <SurveySelection title="Nutrition" imageName="nutrition"/>
+        <SurveySelection title="Physical Activity" imageName="physical-activity"/>
       </div>
 
       <div className="survey-selections">
-        <SurveySelection/>
+        <SurveySelection title="Food Frequency" imageName="child-eating"/>
       </div>
     </div>
   );

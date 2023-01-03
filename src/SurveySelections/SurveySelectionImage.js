@@ -1,12 +1,10 @@
 import BaseImage from "../BaseImage";
 
-const SurveySelectionImage = ({id, title}) => (
-    
+const SurveySelectionImage = ({name, title}) => (
     <div className="survey-selection-image">
         <div className="survey-selection-image__title">{title}</div>
-        <BaseImage name="nutrition" />
+        <BaseImage name={name} />
     </div>
-
 );
 
 export default SurveySelectionImage;
