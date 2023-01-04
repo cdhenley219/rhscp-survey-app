@@ -20,7 +20,10 @@ const SurveySelections = ({children}) => {
     // }, []);
 
     return (
-        <div className="survey-selections">{children}</div> 
+        <>
+            <div className="survey-selections">{children}</div> 
+        </>
+       
     );
 };
 

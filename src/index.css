@@ -14,6 +14,30 @@ body {
   margin: 20px;
 }
 
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.App__header {
+  color:  #bf3e13;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.App__header .base-image {
+  width: 100px;
+  height: 100px;
+}
+
 .survey-selections-item {
   background-color: #fcd1bc;
   padding: 20px;
@@ -67,6 +91,39 @@ body {
   font-weight: bold;
   color: #ffffff;
   text-align: center;
+}
+
+.survey {
+  margin: 20px;
+}
+
+.survey-heading {
+  text-align: center;
+}
+
+.survey-heading .grades-image {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+
+
+.survey-question-type {
+  padding: 20px 0;
+}
+
+.survey-question-type__choice {
+}
+
+
+.survey-question-type__choice_button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.survey-question {
+  padding: 10px 0;
 }
 
 

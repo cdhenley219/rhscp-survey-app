@@ -4,15 +4,20 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import App from './App';
 import './index.css';
+import App from './App';
+import Survey from './Survey/Survey';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App/>,
   },
+  {
+    path: 'survey/:id',
+    element: <Survey/>
+  }
 ]);
 root.render(
   <React.StrictMode>
