@@ -1,4 +1,5 @@
-import BaseImage from "../BaseImage";
+import BaseImage from "../BaseImage/BaseImage";
+import './survey-selection-image.css';
 
 const SurveySelectionImage = ({name, title}) => (
     <div className="survey-selection-image">

@@ -5,18 +5,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css';
-import App from './App';
-import Survey from './Survey/Survey';
+import SurveySelectionsPage from './pages/SurveySelections';
+import SurveyPage from './pages/Survey';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App/>,
+    element: <SurveySelectionsPage/>,
   },
   {
     path: 'survey/:id',
-    element: <Survey/>
+    element: <SurveyPage/>
   }
 ]);
 root.render(

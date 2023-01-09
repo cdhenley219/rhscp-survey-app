@@ -1,4 +1,5 @@
-import BaseImage from "./BaseImage";
+import BaseImage from "../BaseImage/BaseImage";
+import './grades-image.css';
 
 const GradesImage = ({name}) => {
     const title = name === 'apple' ? 'K-2' : '6-8';

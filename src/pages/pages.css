@@ -1,0 +1,42 @@
+.survey {
+    margin: 20px;
+}
+
+.go-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.go-button {
+  padding: 10px 30px;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.survey-selections {
+  
+}
+
+
+@media screen and (min-width: 992px)  { 
+    .survey-selections__row {
+      display: flex;
+      justify-content: center;
+    } 
+  }
+
+  @media screen and (min-width: 992px)  { 
+    .survey-selections__row {
+      display: flex;
+      justify-content: center;
+    } 
+  }
+
+  @media screen and (min-width: 992px)  { 
+    .survey-selections__row {
+      display: flex;
+      justify-content: center;
+    } 
+  }

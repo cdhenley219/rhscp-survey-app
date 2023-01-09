@@ -1,0 +1,116 @@
+.survey-selections-item {
+    background-color: #fcd1bc;
+    padding: 20px;
+    margin: 15px;
+}
+  
+.survey-selections-item__links {
+    padding: 5px;
+    background-color: white;
+}
+
+.survey-selections-item__links_title {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 992px)  { 
+    .survey-selections-item {
+      flex-basis: 50%;   
+      display: flex;
+    }
+  
+    .survey-selections-item__image {
+      flex-basis: 80%;
+    }
+  
+    .survey-selections-item__links {
+      flex-basis: 20%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1px;
+    }
+  }
+
+  @media screen and (min-width: 992px)  { 
+    .survey-selections-item {
+      flex-basis: 50%;   
+      display: flex;
+    }
+  
+    .survey-selections-item__image {
+      flex-basis: 80%;
+    }
+  
+    .survey-selections-item__links {
+      flex-basis: 20%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1px;
+    }
+  }
+
+  @media screen and (min-width: 992px)  {   
+    .survey-selections-item {
+      flex-basis: 50%;   
+      display: flex;
+    }
+  
+    .survey-selections-item__image {
+      flex-basis: 80%;
+    }
+  
+    .survey-selections-item__links {
+      flex-basis: 20%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) { 
+    .survey-selection-image__title {
+      font-size: 72px;
+    }
+  
+    .survey-selections-item {
+      display: flex;
+    }
+  
+    .survey-selections-item__image {
+      flex-basis: 80%;
+    }
+  
+    .survey-selections-item__links {
+      display: block;
+      flex-basis: 20%;
+    }
+  
+    .grades-image__title {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) { 
+    .survey-selection-image__title {
+      font-size: 48px;
+    }
+  
+    .survey-selections-item__links_content{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  
+    .grades-image {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .grades-image__title {
+      font-size: 18px;
+    }
+  }

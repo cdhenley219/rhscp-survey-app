@@ -1,0 +1,14 @@
+.grades-image {
+    position: relative;
+}
+  
+.grades-image__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+

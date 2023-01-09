@@ -1,3 +1,5 @@
+import './base-image.css';
+
 const baseUrl = 'https://ik.imagekit.io/ptbmshrys';
 
 const BaseImage = ({name}) => (

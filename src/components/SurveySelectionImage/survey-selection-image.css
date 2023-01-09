@@ -1,0 +1,35 @@
+.survey-selection-image {
+    position: relative;
+  }
+
+.survey-selection-image__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(191, 62, 19, 0.5);
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) { 
+    .survey-selection-image__title {
+      font-size: 72px;
+    }
+  
+    .grades-image__title {
+      font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) { 
+    .survey-selection-image__title {
+      font-size: 48px;
+    }
+  
+    .grades-image__title {
+      font-size: 18px;
+    }
+  
+}

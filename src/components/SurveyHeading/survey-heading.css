@@ -1,0 +1,14 @@
+.survey-heading {
+    text-align: center;
+    display: flex;
+}
+  
+.survey-heading__title {
+    width: 100%;
+}
+  
+.survey-heading .grades-image {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
