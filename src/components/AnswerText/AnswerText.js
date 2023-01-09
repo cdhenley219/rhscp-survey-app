@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './answer-text.css';
 
 const AnswerText = ({ text, imageSrc='', selected=false, multipleAnswersAccepted=false, onSelect=()=>{},

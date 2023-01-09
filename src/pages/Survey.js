@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import SurveyHeading from '../components/SurveyHeading/SurveyHeading';
 import MultipleChoice from '../components/MultipleChoice/MultipleChoice';
-import FillInTheBlank from '../components/FillInTheBlank/FillInTheBlank';
 import nutritionLiteracyKto2Data from '../data/nutritionLiteracyKto2';
 import './pages.css';
 
