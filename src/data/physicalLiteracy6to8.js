@@ -5,7 +5,7 @@ const physicalLiteracy6to8Data = {
     grades: physicalLiteracy6to8Config.grades,
     id: '3',
     data: [
-    /*{
+    {
         question: {
             id: '1',
             label: 'Doing a Sport or Activity',
@@ -34,7 +34,7 @@ const physicalLiteracy6to8Data = {
             mediaSrc: physicalLiteracy6to8Config['1.2'].mediaSrc
         },
         choices: null
-    },*/
+    },
     {
         question: {
             id: '2',

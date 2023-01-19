@@ -3,6 +3,7 @@
   padding: 20px;
   margin: 15px 0;
   font-size: 20px;
+  display: flex;
 }
  
 .answer-text.text--selected {

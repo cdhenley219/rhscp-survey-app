@@ -5,7 +5,7 @@ const physicalLiteracyKto2Data = {
     grades: physicalLiteracyKto2Config.grades,
     id: '1',
     data: [
-    /*{
+    {
         question: {
             id: '1',
             label: '',
@@ -36,7 +36,7 @@ const physicalLiteracyKto2Data = {
                 mediaSrc: physicalLiteracyKto2Config['1']['4'].mediaSrc 
             }
         ]
-    },*/
+    },
     {
         question: {
             id: '2',
@@ -305,7 +305,7 @@ const physicalLiteracyKto2Data = {
             label: 'Doing a Sport or Activity',
             type: 'TE',
             text: 'How many days/week?',
-            mediaSrc: physicalLiteracyKto2Config['12'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['11.1'].mediaSrc
         },
         choices: null      
     },

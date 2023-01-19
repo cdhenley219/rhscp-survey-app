@@ -2,6 +2,7 @@ import QuestionText from '../QuestionText/QuestionText';
 import './fill-in-the-blank.css';
 
 const FillInTheBlank = ({choice, value, onAnswerChange=()=>{} }) => {
+    console.log(value);
    return (<div className="survey-fill-in-blank">
         <QuestionText text={choice.question.text}/>
         <input id="id" type="text" value={value} onChange={onAnswerChange}/>
