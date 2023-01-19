@@ -47,6 +47,8 @@ const Survey = () => {
 
             case 'TE': 
                  return <FillInTheBlank choice={currentChoice} value={selectedAnswer[0]} onAnswerChange={e => setSelectedAnswer([e.target.value])}/> 
+
+            default: return;
         }
     };
 
