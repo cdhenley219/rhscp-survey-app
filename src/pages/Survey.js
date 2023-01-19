@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import SurveyHeading from '../components/SurveyHeading/SurveyHeading';
 import MultipleChoice from '../components/MultipleChoice/MultipleChoice';
 import FillInTheBlank from '../components/FillInTheBlank/FillInTheBlank';
-import MediaMultipleChoice from '../components/MediaMultipleChoice/MediaMultipleChoice';
+//import MediaMultipleChoice from '../components/MediaMultipleChoice/MediaMultipleChoice';
 import {getData, getGradeImage} from '../util/data';
 import './pages.css';
 

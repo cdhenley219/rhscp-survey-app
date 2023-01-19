@@ -391,7 +391,7 @@ const physicalLiteracyKto2Data = {
             {
                 id: '4',
                 text: "Sitting watching videos/movies",
-                backgroundColor: physicalLiteracyKto2Config['13']['4'].textColor, 
+                textColor: physicalLiteracyKto2Config['13']['4'].textColor, 
                 backgroundColor: physicalLiteracyKto2Config['13']['4'].backgroundColor, 
                 mediaSrc: physicalLiteracyKto2Config['13']['4'].mediaSrc 
             }

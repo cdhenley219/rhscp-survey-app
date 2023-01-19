@@ -1,10 +1,10 @@
-import MediaMultipleChoiceAnswer from '../MediaMultipleChoiceAnswer/MediaMultipleChoiceAnswer';
+//import MediaMultipleChoiceAnswer from '../MediaMultipleChoiceAnswer/MediaMultipleChoiceAnswer';
 import QuestionText from '../QuestionText/QuestionText';
 import './media-multiple-choice.css';
 
 const MediaMultipleChoice = ({choice, selectedAnswers, onSelect=()=>{}, multipleAnswersAccepted=false}) => {
-    const findSelectedAnswer = id => selectedAnswers.find(answer => answer.id === id);
-    let numRows = Array.from({ length: choice.answers/2 }, (value, index) => index);
+   // const findSelectedAnswer = id => selectedAnswers.find(answer => answer.id === id);
+   // let numRows = Array.from({ length: choice.answers/2 }, (value, index) => index);
 
     console.log(choice.answers);
 

@@ -107,7 +107,7 @@ const physicalLiteracy6to8Data = {
             {
                 id: '4',
                 text: "Sitting watching videos/movies",
-                backgroundColor: physicalLiteracy6to8Config['3']['4'].textColor, 
+                textColor: physicalLiteracy6to8Config['3']['4'].textColor, 
                 backgroundColor: physicalLiteracy6to8Config['3']['4'].backgroundColor, 
                 mediaSrc: physicalLiteracy6to8Config['3']['4'].mediaSrc 
             }

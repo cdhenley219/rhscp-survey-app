@@ -107,7 +107,7 @@ const physicalLiteracy3to5Data = {
             {
                 id: '4',
                 text: "Sitting watching videos/movies",
-                backgroundColor: physicalLiteracy3to5Config['3']['4'].textColor, 
+                textColor: physicalLiteracy3to5Config['3']['4'].textColor, 
                 backgroundColor: physicalLiteracy3to5Config['3']['4'].backgroundColor, 
                 mediaSrc: physicalLiteracy3to5Config['3']['4'].mediaSrc 
             }
