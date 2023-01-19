@@ -1,10 +1,10 @@
 import QuestionText from '../QuestionText/QuestionText';
 import './fill-in-the-blank.css';
 
-const FillInTheBlank = ({questionText='', onAnswerChange=()=>{} }) => {
+const FillInTheBlank = ({choice, value, onAnswerChange=()=>{} }) => {
    return (<div className="survey-fill-in-blank">
-        <QuestionText text={questionText}/>
-        <input id="id" type="text" onChange={onAnswerChange}/>
+        <QuestionText text={choice.question.text}/>
+        <input id="id" type="text" value={value} onChange={onAnswerChange}/>
     </div>)
 };
 

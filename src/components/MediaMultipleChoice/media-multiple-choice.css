@@ -1,0 +1,12 @@
+.survey-media-multiple-choice {
+    
+}
+
+.survey-media-multiple-choice.choice--selected {
+    opacity: 0.5;
+}
+
+.survey-media-multiple-choice__row {
+    display: flex;
+    justify-content: center;
+}

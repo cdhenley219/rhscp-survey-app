@@ -1,0 +1,16 @@
+.survey-media-multiple-choice-answer {
+   text-align: center;
+   width: 50%;
+   max-width: 400px;
+   display: inline-block;
+   padding: 20px;
+   cursor: pointer;
+}
+
+.survey-media-multiple-choice-answer label {
+   font-size: 16px;
+}
+
+.survey-media-multiple-choice-answer input {
+   opacity: 0;
+}

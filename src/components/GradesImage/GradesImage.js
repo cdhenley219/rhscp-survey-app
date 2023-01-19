@@ -2,15 +2,22 @@ import BaseImage from "../BaseImage/BaseImage";
 import './grades-image.css';
 
 const GradesImage = ({name}) => {
-    const title = name === 'apple' ? 'K-2' : '6-8';
+    const getTitle = () => {
+        switch(name){
+            case 'apple': return 'K-2';
+            case 'board': return '6-8';
+            default: return '3-5';
+        }
+    };
 
     return (
         <div className="grades-image">
             <div className="grades-image__title">
                 <div>Grades</div>
-                <div>{title}</div>
+                <div>{getTitle()}</div>
             </div>
-            <BaseImage name={name} />
+            {name !== 'triangle' && <BaseImage name={name} />}
+            {name === 'triangle' && <div className="grades-image__triangle"></div>}
         </div>
     );
 

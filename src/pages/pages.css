@@ -1,14 +1,10 @@
-.survey {
-    margin: 20px;
-}
-
 .go-buttons {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
 
-.go-button {
+.go-button, .finish-button {
   padding: 10px 30px;
   border: 1px solid black;
   background-color: white;
@@ -17,6 +13,15 @@
 
 .survey-selections {
   
+}
+
+.survey .logo-link {
+  width: 75px;
+  height: 75px;  
+}
+
+.survey .grades-image__title {
+  font-size: 20px;
 }
 
 
@@ -39,4 +44,15 @@
       display: flex;
       justify-content: center;
     } 
+  }
+
+  @media screen and (min-width: 768px)  { 
+    .survey {
+      margin: 20px;
+    }
+
+    .survey .logo-link {
+      width: 100px;
+      height: 100px;  
+    }
   }

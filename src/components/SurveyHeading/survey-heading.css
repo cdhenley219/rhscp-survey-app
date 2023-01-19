@@ -1,6 +1,7 @@
 .survey-heading {
     text-align: center;
     display: flex;
+    position: relative;
 }
   
 .survey-heading__title {
@@ -11,4 +12,8 @@
     display: inline-block;
     width: 150px;
     height: 150px;
+}
+
+.survey-heading .logo-link {
+    position: absolute;
 }
