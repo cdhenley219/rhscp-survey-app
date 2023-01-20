@@ -11,7 +11,9 @@ const physicalLiteracy3to5Data = {
             label: 'Doing a Sport or Activity',
             type: 'TE',
             text: 'Do you play a sport or do an after school activity? If yes, what is it?',
-            mediaSrc: physicalLiteracy3to5Config['1'].mediaSrc
+            mediaSrc: physicalLiteracy3to5Config['1'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy3to5Config['1'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy3to5Config['1'].mediaSrcHeight
         },
         choices: null
     },

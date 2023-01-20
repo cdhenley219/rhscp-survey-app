@@ -10,6 +10,7 @@ const MultipleChoice = ({choice, selectedAnswers, onSelect=()=>{}, multipleAnswe
         <div className="survey-multiple-choice">
             <QuestionText text={choice.question.text}/>
             {choice.question.mediaSrc && <BaseImage mediaSrc={choice.question.mediaSrc}/>}
+        
             <div>
                 {choice.choices.map(answer => (
                     <AnswerText 
