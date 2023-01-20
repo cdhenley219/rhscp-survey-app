@@ -3,17 +3,16 @@ import { useParams } from 'react-router-dom';
 import SurveyHeading from '../components/SurveyHeading/SurveyHeading';
 import MultipleChoice from '../components/MultipleChoice/MultipleChoice';
 import FillInTheBlank from '../components/FillInTheBlank/FillInTheBlank';
-//import MediaMultipleChoice from '../components/MediaMultipleChoice/MediaMultipleChoice';
+import MediaMultipleChoice from '../components/MediaMultipleChoice/MediaMultipleChoice';
 import {getData, getGradeImage} from '../util/data';
 import './pages.css';
 
 const Survey = () => {
-    let { surveyId } = useParams();
+    const { surveyId } = useParams();
     const surveyData = getData(surveyId);
     const [selectedAnswer, setSelectedAnswer] = useState([]); 
     const [surveyQuestionIndex, setSurveyQuestionIndex] = useState(0);
     const currentChoice = surveyData.data[surveyQuestionIndex];
-    console.log(selectedAnswer);
 
     const selectAnswer = (answerId, answerSelected, multipleAnswersAccepted) => {
         if (answerSelected) {
@@ -41,9 +40,9 @@ const Survey = () => {
     const getQuestionComponent = () => {
         switch(currentChoice.question.type){
             case 'MC':
-                //if (currentChoice.question.isMediaMC) {
-                   // return  <MediaMultipleChoice choice={currentChoice} onSelect={selectAnswer} selectedAnswers={selectedAnswer}/>;
-                //}
+                if (currentChoice.question.isMediaMC) {
+                   return  <MediaMultipleChoice choice={currentChoice} onSelect={selectAnswer} selectedAnswers={selectedAnswer}/>;
+                }
                 return <MultipleChoice choice={currentChoice} onSelect={selectAnswer} selectedAnswers={selectedAnswer}/>;
 
             case 'TE': 

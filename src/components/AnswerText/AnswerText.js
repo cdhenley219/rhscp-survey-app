@@ -14,6 +14,7 @@ const AnswerText = ({ text, imageSrc='', selected=false, multipleAnswersAccepted
                 'color': textColor, 
                 'border': `1px solid ${textColor}`}}>
         {mediaSrc && <BaseImage name={mediaSrc}/>}
+
         <input id={rest.id} type="checkbox" name={rest.name} value={rest.value} checked={selected} onChange={handleChange} onClick={handleChange}/> 
         <label htmlFor={rest.id}>{text}</label>
     </div>

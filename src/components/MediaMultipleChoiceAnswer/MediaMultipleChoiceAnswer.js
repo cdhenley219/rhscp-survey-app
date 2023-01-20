@@ -6,7 +6,7 @@ const MediaMultipleChoiceAnswer = ({ text, mediaSrc='', selected=false, multiple
     };
 
     return (
-    <div className="survey-media-multiple-choice-answer">
+    <div className={'survey-media-multiple-choice-answer' + (selected ? ' choice--selected': '') }>
         <label htmlFor="id">{text}</label>
         <BaseImage name="Logo"/>
         <input id={rest.id} type="checkbox" name={rest.name} onChange={handleChange} onClick={handleChange} /> 
