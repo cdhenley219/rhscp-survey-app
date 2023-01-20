@@ -23,6 +23,7 @@ const MediaMultipleChoice = ({choice, selectedAnswers, onSelect=()=>{}, multiple
                         text={answer.text} 
                         value={answer.text}
                         name={answer.name}
+                        mediaSrc={answer.mediaSrc}
                         multipleAnswersAccepted={multipleAnswersAccepted}
                         selected={Array.isArray(selectedAnswers) ? findSelectedAnswer(answer.id) : selectedAnswers.id === answer.id}
                         onSelect={onSelect}/>
