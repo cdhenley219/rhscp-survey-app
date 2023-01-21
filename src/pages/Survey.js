@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import SurveyHeading from '../components/SurveyHeading/SurveyHeading';
 import SurveyFooter from '../components/SurveyFooter/SurveyFooter';
-import MultipleChoice from '../components/MultipleChoice/MultipleChoice';
-import FillInTheBlank from '../components/FillInTheBlank/FillInTheBlank';
+import TextMultipleChoice from '../components/TextMultipleChoice/TextMultipleChoice';
+import FreeTextChoice from '../components/FreeTextChoice/FreeTextChoice';
 import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
 import MediaMultipleChoice from '../components/MediaMultipleChoice/MediaMultipleChoice';
 import {getData, getGradeImage} from '../util/data';
@@ -45,10 +45,10 @@ const Survey = () => {
                 if (currentChoice.question.isMediaMC) {
                    return  <MediaMultipleChoice choice={currentChoice} onSelect={selectAnswer} selectedAnswers={selectedAnswer}/>;
                 }
-                return <MultipleChoice choice={currentChoice} onSelect={selectAnswer} selectedAnswers={selectedAnswer}/>;
+                return <TextMultipleChoice choice={currentChoice} onSelect={selectAnswer} selectedAnswers={selectedAnswer}/>;
 
             case 'TE': 
-                 return <FillInTheBlank choice={currentChoice} value={selectedAnswer[0] || ''} onAnswerChange={e => setSelectedAnswer([e.target.value])}/> 
+                 return <FreeTextChoice choice={currentChoice} value={selectedAnswer[0] || ''} onAnswerChange={e => setSelectedAnswer([e.target.value])}/> 
 
             default: return;
         }
@@ -61,12 +61,15 @@ const Survey = () => {
     return (
         <div className="survey">
             <SurveyHeading gradesImageName={getGradeImage(surveyData.grades)} title={surveyData.title}/>
-            <MatchingChoices  />
-            {/* {getQuestionComponent() } */}
-            <SurveyFooter                 
+            {/* <MatchingChoices  /> */}
+            {getQuestionComponent() } 
+            <SurveyFooter    
+                goNext={goNext}
+                goPrevious={goPrevious}             
                 previousButtonShown={(surveyQuestionIndex > 0)}
                 nextButtonShown={(surveyQuestionIndex < surveyData.data.length-1)}
-                nextButtonDisabled={selectedAnswer.length === 0}
+                nextButtonDisabled={selectedAnswer.length === 0 || 
+                                    (selectedAnswer.length === 1 && selectedAnswer[0] === '')}
                 finishButtonShown={(surveyQuestionIndex === surveyData.data.length-1)} />
         </div>
     );

@@ -1,6 +1,6 @@
 import QuestionText from '../QuestionText/QuestionText';
 import AnswerText from '../AnswerText/AnswerText';
-import './multiple-choice.css';
+import './text-multiple-choice.css';
 import BaseImage from '../BaseImage/BaseImage';
 
 const MultipleChoice = ({choice, selectedAnswers, onSelect=()=>{}, multipleAnswersAccepted=false}) => {
@@ -12,19 +12,16 @@ const MultipleChoice = ({choice, selectedAnswers, onSelect=()=>{}, multipleAnswe
             {choice.question.mediaSrc && <BaseImage mediaSrc={choice.question.mediaSrc}/>}
         
             <div>
-                {choice.choices.map(answer => (
+                {choice.choices.map(aChoice => (
                     <AnswerText 
-                        key={answer.id} 
-                        id={answer.id}
-                        text={answer.text} 
-                        value={answer.text}
-                        name={`Q-${answer.id}`}
+                        key={aChoice.id} 
+                        id={aChoice.id}
+                        choice={aChoice}
+                        name={`Q-${aChoice.id}`}
                         multipleAnswersAccepted={multipleAnswersAccepted}
-                        selected={Array.isArray(selectedAnswers) ? findSelectedAnswer(answer.id) : selectedAnswers.id === answer.id}
+                        selected={Array.isArray(selectedAnswers) ? findSelectedAnswer(aChoice.id) : selectedAnswers.id === aChoice.id}
                         onSelect={onSelect}
-                        backgroundColor={answer.backgroundColor}
-                        mediaSrc={answer.mediaSrc} 
-                        textColor={answer.textColor} />
+                     />
                 ))}
             </div>
         </div>
