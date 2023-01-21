@@ -1,10 +1,10 @@
 import BaseImage from '../BaseImage/BaseImage';
 import './question.css';
 
-const QuestionText = ({text, mediaSrcWidth, mediaSrcHeight, mediaSrc }) => {
+const QuestionText = ({choice }) => {
    return ( <>
-        <h2 className="survey-question">{text}</h2>
-        {mediaSrc && <BaseImage name={mediaSrc} width={mediaSrcWidth} height={mediaSrcHeight}/>}
+        <h2 className="survey-question">{choice.question.text}</h2>
+        {choice.question.mediaSrc && <BaseImage name={choice.question.mediaSrc} width={choice.question.mediaSrcWidth} height={choice.question.mediaSrcHeight}/>}
     </>)
 
 };

@@ -16,7 +16,7 @@ const MediaMultipleChoice = ({choice, selectedAnswers, onSelect=()=>{}, multiple
 
     return (
         <div className="survey-media-multiple-choice slide-up" ref={containerEl}>
-            <QuestionText text={choice.question.text}/>
+            <QuestionText choice={choice}/>
             
             { numRows.map ((row) => (
                 <div className="survey-media-multiple-choice__row">

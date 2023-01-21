@@ -14,8 +14,8 @@ const MultipleChoice = ({choice, selectedAnswers, onSelect=()=>{}, multipleAnswe
 
     return (
         <div className="survey-multiple-choice" ref={containerEl}>
-            <QuestionText text={choice.question.text}/>
-            {choice.question.mediaSrc && <BaseImage mediaSrc={choice.question.mediaSrc}/>}
+            <QuestionText choice={choice}/>
+            {/* {choice.question.mediaSrc && <BaseImage mediaSrc={choice.question.mediaSrc}/>} */}
         
             <div>
                 {choice.choices.map(aChoice => (

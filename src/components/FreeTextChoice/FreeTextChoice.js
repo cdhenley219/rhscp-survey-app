@@ -8,7 +8,7 @@ const FreeTextChoice = ({choice, value, onAnswerChange=()=>{} }) => {
     useSlide('left', containerEl, choice);
 
     return (<div className="survey-free-text-choice" ref={containerEl}>
-            <QuestionText text={choice.question.text}/>
+            <QuestionText choice={choice}/>
             <input id="id" type="text" value={value} onChange={onAnswerChange}/>
         </div>)
 };
