@@ -30,6 +30,32 @@ a {
 }
 
 
+.slide-left {
+  width: 100%;
+  animation: 0.75s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+
+.slide-up {
+  width: 100%;
+  animation: 0.75s slide-up;
+}
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
 
 
 .survey-question-type {

@@ -61,8 +61,7 @@ const Survey = () => {
     return (
         <div className="survey">
             <SurveyHeading gradesImageName={getGradeImage(surveyData.grades)} title={surveyData.title}/>
-            {/* <MatchingChoices  /> */}
-            {getQuestionComponent() } 
+            { getQuestionComponent() } 
             <SurveyFooter    
                 goNext={goNext}
                 goPrevious={goPrevious}             

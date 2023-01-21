@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import useSlide from '../../hooks/useSlide';
 import QuestionText from '../QuestionText/QuestionText';
 import AnswerText from '../AnswerText/AnswerText';
 import './text-multiple-choice.css';
@@ -5,9 +7,13 @@ import BaseImage from '../BaseImage/BaseImage';
 
 const MultipleChoice = ({choice, selectedAnswers, onSelect=()=>{}, multipleAnswersAccepted=false}) => {
     const findSelectedAnswer = id => selectedAnswers.find(answer => answer.id === id);
+    const containerEl = useRef(null);
+    useSlide('left', containerEl, choice);
+
+
 
     return (
-        <div className="survey-multiple-choice">
+        <div className="survey-multiple-choice" ref={containerEl}>
             <QuestionText text={choice.question.text}/>
             {choice.question.mediaSrc && <BaseImage mediaSrc={choice.question.mediaSrc}/>}
         

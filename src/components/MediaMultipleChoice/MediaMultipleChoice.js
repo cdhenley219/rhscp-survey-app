@@ -1,21 +1,25 @@
+import { useRef } from 'react';
+import useSlide from '../../hooks/useSlide';
 import MediaMultipleChoiceAnswer from '../MediaMultipleChoiceAnswer/MediaMultipleChoiceAnswer';
 import QuestionText from '../QuestionText/QuestionText';
 import './media-multiple-choice.css';
 
 const MediaMultipleChoice = ({choice, selectedAnswers, onSelect=()=>{}, multipleAnswersAccepted=false}) => {
-   const findSelectedAnswer = id => selectedAnswers.find(answer => answer.id === id);
+    const containerEl = useRef(null);
+    const findSelectedAnswer = id => selectedAnswers.find(answer => answer.id === id);
     const numRows = Array.from({ length: choice.choices.length/2 }, (value, index) => index);
     const choicesArrayOfArrays = [];
+    useSlide('up', containerEl, choice);
     for(let i = 0; i < choice.choices.length; i=i+2){
         choicesArrayOfArrays.push([choice.choices[i], choice.choices[i+1]])
     }
 
     return (
-        <div className="survey-media-multiple-choice">
+        <div className="survey-media-multiple-choice slide-up" ref={containerEl}>
             <QuestionText text={choice.question.text}/>
             
             { numRows.map ((row) => (
-                <div className="survey-media-multiple-choice__row" >
+                <div className="survey-media-multiple-choice__row">
                     {choicesArrayOfArrays[row].map((answer, index) => (
                         <MediaMultipleChoiceAnswer 
                         key={answer.id} 

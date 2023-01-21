@@ -1,11 +1,16 @@
-import './matching-choices.css';
+import { useRef } from 'react';
+import useSlide from '../../hooks/useSlide';
 import QuestionText from '../QuestionText/QuestionText';
 import QuestionAnswerMatch from '../QuestionAnswerMatch/QuestionAnswerMatch';
 import MatchingAnswer from '../MatchingAnswer/MatchingAnswer';
+import './matching-choices.css';
 
-const MatchingChoices = () => {
+const MatchingChoices = ({choice}) => {
+    const containerEl = useRef(null);
+    useSlide('up', containerEl, choice);
+
     return (
-        <div className="matching-choices">
+        <div className="matching-choices" ref={containerEl}>
             <QuestionText text="What is the question?"/>
             <div className="matching-choices__rule">Please select only one answer</div>
             <div className="matching-choices__content">
