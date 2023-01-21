@@ -16,7 +16,7 @@ const AnswerText = ({ text, imageSrc='', selected=false, multipleAnswersAccepted
         {mediaSrc && <BaseImage name={mediaSrc}/>}
         
     <div>
-        <BaseImage name="Logo"/>
+
         <input id={rest.id} type="checkbox" name={rest.name} value={rest.value} checked={selected} onChange={handleChange} onClick={handleChange}/> 
         <label htmlFor={rest.id}>{text}</label>
     </div>
