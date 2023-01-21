@@ -5,16 +5,16 @@ const physicalLiteracyKto2Config = {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
-            mediaSrc: ''
+            mediaSrc: 'Logo'
         },
         '2' : {
-            mediaSrc: ''
+            mediaSrc: 'Logo'
         },
         '3' : {
-            mediaSrc: ''
+            mediaSrc: 'Logo'
         },
         '4' : {
-            mediaSrc: ''
+            mediaSrc: 'Logo'
         }
     },
     '2': {
