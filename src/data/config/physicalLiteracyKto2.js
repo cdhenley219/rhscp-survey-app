@@ -61,6 +61,7 @@ const physicalLiteracyKto2Config = {
     },
     '5': {
         mediaSrc: '',
+        isMediaMC: true,
         '1' : {
             mediaSrc: ''
         },
