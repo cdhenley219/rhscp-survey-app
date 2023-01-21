@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import SurveyHeading from '../components/SurveyHeading/SurveyHeading';
+import SurveyFooter from '../components/SurveyFooter/SurveyFooter';
 import MultipleChoice from '../components/MultipleChoice/MultipleChoice';
 import FillInTheBlank from '../components/FillInTheBlank/FillInTheBlank';
+import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
 import MediaMultipleChoice from '../components/MediaMultipleChoice/MediaMultipleChoice';
 import {getData, getGradeImage} from '../util/data';
 import './pages.css';
@@ -59,12 +61,13 @@ const Survey = () => {
     return (
         <div className="survey">
             <SurveyHeading gradesImageName={getGradeImage(surveyData.grades)} title={surveyData.title}/>
-            {getQuestionComponent() }
-            <div className="go-buttons">
-                {(surveyQuestionIndex > 0) && <button className="go-button" onClick={goPrevious}>Previous</button>}
-                {(surveyQuestionIndex < surveyData.data.length-1) && <button className="go-button" disabled={selectedAnswer.length === 0} onClick={goNext}>Next</button>}
-                {(surveyQuestionIndex === surveyData.data.length-1) && <a href="/" className="finish-button">Finish</a>}
-            </div>
+            <MatchingChoices  />
+            {/* {getQuestionComponent() } */}
+            <SurveyFooter                 
+                previousButtonShown={(surveyQuestionIndex > 0)}
+                nextButtonShown={(surveyQuestionIndex < surveyData.data.length-1)}
+                nextButtonDisabled={selectedAnswer.length === 0}
+                finishButtonShown={(surveyQuestionIndex === surveyData.data.length-1)} />
         </div>
     );
 };

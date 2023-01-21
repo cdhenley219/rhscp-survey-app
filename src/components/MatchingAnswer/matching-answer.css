@@ -1,0 +1,16 @@
+.matching-answer {
+    padding-bottom: 10px; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.matching-answer__text {
+
+}
+
+.matching-answer__error {
+    background-color: red;
+    padding: 0 5px;
+    color: white;
+}

@@ -1,0 +1,15 @@
+.matching-choices {
+}
+
+.matching-choices__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.matching-choices__content_item { 
+    padding: 10px 0;
+}
+
+.matching-choices__rule {
+    text-align: center;
+}
