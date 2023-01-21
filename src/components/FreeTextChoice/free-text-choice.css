@@ -1,6 +1,7 @@
+/* resize input width jbg */
 .survey-free-text-choice input {
     padding: 8px;
-    width: 100%;
+    width: 60%;
     border: 1px solid black;
     border-radius: 4px;
     height: 45px;

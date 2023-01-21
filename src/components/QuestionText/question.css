@@ -1,4 +1,10 @@
 .survey-question {
     padding: 10px 0;
-    text-align: center;
+    text-align: center;    
 }
+
+/* survey image class add spacing between image and question */
+.survey-image {
+    margin:30px;    
+}
+
