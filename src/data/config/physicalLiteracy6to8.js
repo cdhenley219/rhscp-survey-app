@@ -23,22 +23,22 @@ const physicalLiteracy6to8Config = {
         '1' : {           
             backgroundColor: '#0b3e71',           
             textColor: 'white',
-            mediaSrc: ''           
+            mediaSrc: 'four_different_sports'           
         },
         '2' : {           
             backgroundColor: '#0b3e71',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: 'four_different_sports'
         },
         '3' : {
             backgroundColor: '#0b3e71',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: 'four_different_sports'
         },
         '4' : {
             backgroundColor: '#0b3e71',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: 'four_different_sports'
         }
     },
     '3': {
