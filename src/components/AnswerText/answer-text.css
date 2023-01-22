@@ -1,9 +1,14 @@
+/* Answer field re-size jbg */
 .answer-text {
+  width:60%;
   position: relative;
   padding: 20px;
-  margin: 15px 0;
+  margin: auto;;
   font-size: 20px;
-  display: flex;
+  display: inherit; 
+  text-align: center; 
+  border-radius: 10px;
+  margin-bottom: 2px;
 }
  
 .answer-text.text--selected {
@@ -17,5 +22,5 @@
   left: 0;
   top: 0;
   position: absolute;
-  cursor: pointer;
+  cursor: pointer;  
 }

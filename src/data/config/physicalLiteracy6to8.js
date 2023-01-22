@@ -2,215 +2,244 @@ const physicalLiteracy6to8Config = {
     grades: '6-8',
     surveyId: '1',
     '1': {
-        mediaSrc: ''
+        mediaSrc: 'physical-activity',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '400px'
     },
     '1.1': {
-        mediaSrc: ''
+        mediaSrc: 'four_different_sports',
+        mediaSrcWidth: '800px',
+        mediaSrcHeight: '300px'
     },
     '1.2': {
-        mediaSrc: ''
+        mediaSrc: 'girl_running_with_football',
+        mediaSrcWidth: '400px',
+        mediaSrcHeight: '300px'
     },
     '2': {
-        mediaSrc: '',
-        '1' : {
-            backgroundColor: 'blue',
+        mediaSrc: 'four_different_sports',
+        mediaSrcWidth: '800px',
+        mediaSrcHeight:'300px',
+        '1' : {           
+            backgroundColor: '#0b3e71',           
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: 'four_different_sports'           
         },
-        '2' : {
-            backgroundColor: 'blue',
+        '2' : {           
+            backgroundColor: '#0b3e71',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: 'four_different_sports'
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: 'four_different_sports'
         },
         '4' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: 'four_different_sports'
         }
     },
     '3': {
-        mediaSrc: '',
+        mediaSrc: 'girl_and_chalk_weights',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '350px',       
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '',
+            mediaSrcHeight: ''
+           
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         }
     },
     '4': {
-        mediaSrc: '',
+        mediaSrc: 'kids_climbing',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '400px',  
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         }
     },
     '5': {
-        mediaSrc: '',
+        mediaSrc: 'kids_stretching',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '400px', 
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         }
     },
     '6': {
-        mediaSrc: '',
+        mediaSrc: 'kids_pushups',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '400px', 
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         }
     },
     '7': {
-        mediaSrc: '',
+        mediaSrc: 'girl_shooting_basketball',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '400px', 
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         }
     },
     '8': {
-        mediaSrc: '',
+        mediaSrc: 'kids_pushups',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '400px', 
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         }
     },
     '9': {
-        mediaSrc: '',
+        mediaSrc: 'kids_pushups',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '400px', 
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         }
     },
     '10': {
-        mediaSrc: '',
+        mediaSrc: 'kids_pushups',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '400px', 
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         }
     },
     '11': {
-        mediaSrc: '',
+        mediaSrc: 'girl_playing_tennis',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '400px', 
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         }

@@ -33,7 +33,9 @@ a {
 .slide-left {
   width: 100%;
   animation: 0.75s slide-left;
+  text-align: center;  /*centered jbg */  
 }
+
 @keyframes slide-left {
   from {
     margin-left: 100%;
@@ -62,7 +64,7 @@ a {
   padding: 20px 0;
 }
 
-.survey-question-type__choice {
+.survey-question-type__choice {  
 }
 
 

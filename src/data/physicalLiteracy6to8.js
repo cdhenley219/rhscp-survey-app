@@ -11,7 +11,9 @@ const physicalLiteracy6to8Data = {
             label: 'Doing a Sport or Activity',
             type: 'TE',
             text: 'Do you play a sport or do an after school activity? If yes, what is it?',
-            mediaSrc: physicalLiteracy6to8Config['1'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['1'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['1'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['1'].mediaSrcHeight
         },
         choices: null
     },
@@ -21,7 +23,9 @@ const physicalLiteracy6to8Data = {
             label: 'Doing a Sport or Activity',
             type: 'TE',
             text: 'How many days/week?',
-            mediaSrc: physicalLiteracy6to8Config['2'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['1.1'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['1.1'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['1.1'].mediaSrcHeight
         },
         choices: null      
     },
@@ -31,7 +35,9 @@ const physicalLiteracy6to8Data = {
             label: 'Doing a Sport or Activity',
             type: 'TE',
             text: 'How long each day?',
-            mediaSrc: physicalLiteracy6to8Config['1.2'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['1.2'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['1.2'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['1.2'].mediaSrcHeight
         },
         choices: null
     },
@@ -41,7 +47,9 @@ const physicalLiteracy6to8Data = {
             type: 'MC',
             label: '',
             text: 'Are your parents active with you after school or on weekends? (like walking, bike riding, playing sports)',
-            mediaSrc: physicalLiteracy6to8Config['2'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['2'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['2'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['2'].mediaSrcHeight
         },
         choices: [
             {
@@ -80,7 +88,9 @@ const physicalLiteracy6to8Data = {
             type: 'MC',
             label: '',
             text: 'When you have free time after school or on weekends, how do you spend it?',
-            mediaSrc: physicalLiteracy6to8Config['3'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['3'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['3'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['3'].mediaSrcHeight
         },
         choices: [
             {
@@ -88,7 +98,10 @@ const physicalLiteracy6to8Data = {
                 text: 'Running around playing games',
                 textColor: physicalLiteracy6to8Config['3']['1'].textColor, 
                 backgroundColor: physicalLiteracy6to8Config['3']['1'].backgroundColor, 
-                mediaSrc: physicalLiteracy6to8Config['3']['1'].mediaSrc 
+                mediaSrc: physicalLiteracy6to8Config['3']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracy6to8Config['3']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracy6to8Config['3']['1'].mediaSrcHeight
+                 
             },
             {
                 id: '2',
@@ -119,7 +132,9 @@ const physicalLiteracy6to8Data = {
             type: 'MC',
             label: '',
             text: 'When you have recess or free time at school, how do you spend it?',
-            mediaSrc: physicalLiteracy6to8Config['4'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['4'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['4'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['4'].mediaSrcHeight
         },
         choices: [
             {
@@ -151,7 +166,9 @@ const physicalLiteracy6to8Data = {
             type: 'MC',
             label: '',
             text: 'How do you feel about going to gym class?',
-            mediaSrc: physicalLiteracy6to8Config['5'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['5'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['5'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['5'].mediaSrcHeight
         },
         choices: [
         {
@@ -189,7 +206,9 @@ const physicalLiteracy6to8Data = {
             label: '',
             type: 'MC',
             text: 'How confident are you at participating in different gym class activities?',
-            mediaSrc: physicalLiteracy6to8Config['6'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['6'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['6'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['6'].mediaSrcHeight
         },
         choices: [
             {
@@ -228,7 +247,9 @@ const physicalLiteracy6to8Data = {
             label: '',
             type: 'MC',
             text: 'How confident are you at throwing a ball to a target 20 feet away?',
-            mediaSrc: physicalLiteracy6to8Config['7'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['7'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['7'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['7'].mediaSrcHeight
         },
         choices: [
             {
@@ -267,7 +288,9 @@ const physicalLiteracy6to8Data = {
             label: '',
             type: 'MC',
             text: 'When you are at recess, do you like to play alone or with others?',
-            mediaSrc: physicalLiteracy6to8Config['8'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['8'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['8'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['8'].mediaSrcHeight
         },
         choices: [
             {
@@ -298,7 +321,9 @@ const physicalLiteracy6to8Data = {
             id: '9',
             type: 'MC',
             text: 'Do you have friends you regularly play outside with that live near you?',
-            mediaSrc: physicalLiteracy6to8Config['9'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['9'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['9'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['9'].mediaSrcHeight
         },
         choices: [
             {
@@ -329,7 +354,9 @@ const physicalLiteracy6to8Data = {
             id: '10',
             type: 'MC',
             text: 'When you are at recess/gym class, do you feel like you have enough energy to play as much as you would like?',
-            mediaSrc: physicalLiteracy6to8Config['10'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['10'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['10'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['10'].mediaSrcHeight
         },
         choices: [
             {
@@ -361,7 +388,9 @@ const physicalLiteracy6to8Data = {
             type: 'MC',
             label: '',
             text: 'If c-3 would you like to learn more skills to have more confidence in gym class and other sporting activities?',
-            mediaSrc: physicalLiteracy6to8Config['11'].mediaSrc
+            mediaSrc: physicalLiteracy6to8Config['11'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy6to8Config['11'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy6to8Config['11'].mediaSrcHeight
         },
         choices: [
             {
