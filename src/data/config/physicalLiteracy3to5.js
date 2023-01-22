@@ -2,12 +2,12 @@ const physicalLiteracy3to5Config = {
     grades: '3-5',
     surveyId: '1',
     '1': {
-        mediaSrc: 'juice',
-        mediaSrcWidth: '20px',
-        mediaSrcHeight: '20px'
+        mediaSrc: 'pencil',
+        mediaSrcWidth: '250px',
+        mediaSrcHeight: '200px'
     },
     '1.1': {
-        mediaSrc: ''
+        mediaSrc: 'kids_playing_soccer'
     },
     '1.2': {
         mediaSrc: ''
