@@ -2,7 +2,7 @@ const physicalLiteracy6to8Config = {
     grades: '6-8',
     surveyId: '1',
     '1': {
-        mediaSrc: 'physical-activity',
+        mediaSrc: 'Kids_building_electronics',
         mediaSrcWidth: '600px',
         mediaSrcHeight: '400px'
     },
@@ -12,39 +12,48 @@ const physicalLiteracy6to8Config = {
         mediaSrcHeight: '300px'
     },
     '1.2': {
-        mediaSrc: 'girl_running_with_football',
-        mediaSrcWidth: '400px',
-        mediaSrcHeight: '300px'
+        mediaSrc: 'girl_holding_weights',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight: '400px'
     },
     '2': {
-        mediaSrc: 'four_different_sports',
-        mediaSrcWidth: '800px',
-        mediaSrcHeight:'300px',
+        mediaSrc: 'Guardians_and_kids_playing_soccer',
+        mediaSrcWidth: '600px',
+        mediaSrcHeight:'400px',
         '1' : {           
             backgroundColor: '#0b3e71',           
             textColor: 'white',
-            mediaSrc: 'four_different_sports'           
+            mediaSrc: '2',
+            mediaSrcWidth: '60px',
+            mediaSrcHeight:'40px' 
+                    
         },
         '2' : {           
             backgroundColor: '#0b3e71',
             textColor: 'white',
-            mediaSrc: 'four_different_sports'
+            mediaSrc: '3',
+            mediaSrcWidth: '60px',
+            mediaSrcHeight:'40px' 
         },
         '3' : {
             backgroundColor: '#0b3e71',
             textColor: 'white',
-            mediaSrc: 'four_different_sports'
+            mediaSrc: '5',
+            mediaSrcWidth: '60px',
+            mediaSrcHeight:'40px' 
         },
         '4' : {
             backgroundColor: '#0b3e71',
             textColor: 'white',
-            mediaSrc: 'four_different_sports'
+            mediaSrc: 'dont_know',
+            mediaSrcWidth: '60px',
+            mediaSrcHeight:'40px' 
         }
     },
     '3': {
-        mediaSrc: 'girl_and_chalk_weights',
+        mediaSrc: 'kids_playing_soccer',
         mediaSrcWidth: '600px',
-        mediaSrcHeight: '350px',       
+        mediaSrcHeight: '400px',       
         '1' : {
             backgroundColor: '#0b3e71',
             textColor: 'white',
@@ -165,7 +174,7 @@ const physicalLiteracy6to8Config = {
         }
     },
     '8': {
-        mediaSrc: 'kids_pushups',
+        mediaSrc: 'kids_playing_with_soccer_ball',
         mediaSrcWidth: '600px',
         mediaSrcHeight: '400px', 
         '1' : {
@@ -185,7 +194,7 @@ const physicalLiteracy6to8Config = {
         }
     },
     '9': {
-        mediaSrc: 'kids_pushups',
+        mediaSrc: 'girl_running_with_football',
         mediaSrcWidth: '600px',
         mediaSrcHeight: '400px', 
         '1' : {
@@ -205,7 +214,7 @@ const physicalLiteracy6to8Config = {
         }
     },
     '10': {
-        mediaSrc: 'kids_pushups',
+        mediaSrc: 'girl_and_chalk_weights',
         mediaSrcWidth: '600px',
         mediaSrcHeight: '400px', 
         '1' : {

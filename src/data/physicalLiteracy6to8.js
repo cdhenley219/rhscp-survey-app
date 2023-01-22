@@ -57,28 +57,36 @@ const physicalLiteracy6to8Data = {
                 text: 'Yes',
                 backgroundColor: physicalLiteracy6to8Config['2']['1'].textColor, 
                 textColor: physicalLiteracy6to8Config['2']['1'].backgroundColor, 
-                mediaSrc: physicalLiteracy6to8Config['2']['1'].mediaSrc 
+                mediaSrc: physicalLiteracy6to8Config['2']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracy6to8Config['2']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracy6to8Config['2']['1'].mediaSrcHeight 
             },
             {
                 id: '2',
                 text: 'No',
                 textColor: physicalLiteracy6to8Config['2']['2'].textColor, 
                 backgroundColor: physicalLiteracy6to8Config['2']['2'].backgroundColor, 
-                mediaSrc: physicalLiteracy6to8Config['2']['2'].mediaSrc 
+                mediaSrc: physicalLiteracy6to8Config['2']['2'].mediaSrc,
+                mediaSrcWidth: physicalLiteracy6to8Config['2']['2'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracy6to8Config['2']['2'].mediaSrcHeight 
             },
             {
                 id: '3',
                 text: 'Sometimes',
                 textColor: physicalLiteracy6to8Config['2']['3'].textColor, 
                 backgroundColor: physicalLiteracy6to8Config['2']['3'].backgroundColor, 
-                mediaSrc: physicalLiteracy6to8Config['2']['3'].mediaSrc 
+                mediaSrc: physicalLiteracy6to8Config['2']['3'].mediaSrc,
+                mediaSrcWidth: physicalLiteracy6to8Config['2']['3'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracy6to8Config['2']['3'].mediaSrcHeight  
             },
             {
                 id: '4',
                 text: "I don't know",
                 textColor: physicalLiteracy6to8Config['2']['4'].textColor, 
                 backgroundColor: physicalLiteracy6to8Config['2']['4'].backgroundColor, 
-                mediaSrc: physicalLiteracy6to8Config['2']['4'].mediaSrc  
+                mediaSrc: physicalLiteracy6to8Config['2']['4'].mediaSrc,
+                mediaSrcWidth: physicalLiteracy6to8Config['2']['4'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracy6to8Config['2']['4'].mediaSrcHeight  
             }
         ]
     },
