@@ -15,24 +15,24 @@ const physicalLiteracy3to5Config = {
     '2': {
         mediaSrc: 'Guardians_and_kids_playing_soccer',
         mediaSrcWidth: '350px',
-        mediaSrcHeight: '230px',
+        mediaSrcHeight: '250px',
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#850909',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#850909',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#850909',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#850909',
             textColor: 'white',
             mediaSrc: ''
         }
@@ -43,22 +43,22 @@ const physicalLiteracy3to5Config = {
         mediaSrcHeight: '230px',
         
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0543ab',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0543ab',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0543ab',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0543ab',
             textColor: 'white',
             mediaSrc: ''
         }
@@ -68,17 +68,17 @@ const physicalLiteracy3to5Config = {
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#bf3e13',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#bf3e13',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#bf3e13',
             textColor: 'white',
             mediaSrc: ''
         }
@@ -88,22 +88,22 @@ const physicalLiteracy3to5Config = {
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#077DA2',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#077DA2',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#077DA2',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#077DA2',
             textColor: 'white',
             mediaSrc: ''
         }
@@ -113,22 +113,22 @@ const physicalLiteracy3to5Config = {
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#02393e',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#02393e',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#02393e',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#02393e',
             textColor: 'white',
             mediaSrc: ''
         }
@@ -138,22 +138,22 @@ const physicalLiteracy3to5Config = {
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#e0155b',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#e0155b',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#e0155b',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#e0155b',
             textColor: 'white',
             mediaSrc: ''
         }
@@ -163,17 +163,17 @@ const physicalLiteracy3to5Config = {
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#800080',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#800080',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#800080',
             textColor: 'white',
             mediaSrc: ''
         }
@@ -183,17 +183,17 @@ const physicalLiteracy3to5Config = {
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#ea0101',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#ea0101',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#ea0101',
             textColor: 'white',
             mediaSrc: ''
         }
@@ -203,37 +203,37 @@ const physicalLiteracy3to5Config = {
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#07492e',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#07492e',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#07492e',
             textColor: 'white',
             mediaSrc: ''
         }
     },
     '11': {
         mediaSrc: 'four_different_sports',
-        mediaSrcWidth: '350px',
+        mediaSrcWidth: '600px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: 'blue',
+            backgroundColor: '#0b3e71',
             textColor: 'white',
             mediaSrc: ''
         }
