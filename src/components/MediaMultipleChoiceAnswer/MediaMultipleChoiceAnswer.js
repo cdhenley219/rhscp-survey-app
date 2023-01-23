@@ -6,10 +6,10 @@ const MediaMultipleChoiceAnswer = ({ text, mediaSrc='', selected=false, multiple
     };
 
     return (
-    <div className={'survey-media-multiple-choice-answer' + (selected ? ' choice--selected': '') }>
-        <label htmlFor="id">{text}</label>
+    <div className={'survey-media-multiple-choice-answer' + (selected ? ' choice--selected': '')}>
+        {/* <label htmlFor="id">{text}</label> */}
         <BaseImage name={mediaSrc}/>
-        <input id={rest.id} type="checkbox" name={rest.name} onChange={handleChange} onClick={handleChange} /> 
+        <input id={rest.id} type="checkbox" value={text} name={rest.name} onChange={handleChange} onClick={handleChange} /> 
     </div>
     );
 };
