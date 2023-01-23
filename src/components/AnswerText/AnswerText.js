@@ -17,9 +17,11 @@ const AnswerText = ({ choice, selected=false, multipleAnswersAccepted=false, onS
         
     <div>
         <input id={rest.id} type="checkbox" name={rest.name} value={rest.value} checked={selected} onChange={handleChange} onClick={handleChange}/> 
-        <label htmlFor={rest.id}>{choice.text}</label>
-        { <FontAwesomeIcon icon={`fa-solid fa-${choice.icon}`} style={{color: choice.iconColor}}  />
+        
+        { 
+            <FontAwesomeIcon icon={`fa-solid fa-${choice.icon}`} style={{color: choice.iconColor}}  />
         }
+        <label htmlFor={rest.id}>{choice.text}</label>
     </div>
 
     </div>
