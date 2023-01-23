@@ -120,7 +120,7 @@ const physicalLiteracyKto2Config = {
             mediaSrcHeight: '25px'
         }
     },
-    '6': {
+    'QID8': {
         mediaSrc: 'kids_playing_basketball',
         isMediaMC: true,
         mediaSrcWidth: '350px',
@@ -146,7 +146,7 @@ const physicalLiteracyKto2Config = {
             mediaSrcHeight: '25px',
         }
     },
-    '7': {
+    'QID9': {
         mediaSrc: 'kids_pushups',
         isMediaMC: true,
         mediaSrcWidth: '350px',
