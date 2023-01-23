@@ -13,7 +13,7 @@ const SurveySelections = () => {
                               imageName="physical-activity" 
                               gradeKTo2SurveyId="1"
                               grade3To5SurveyId="2"
-                              grade6To8SurveyId="3"/>
+                              grade6To8SurveyId="SV_6QpwvgxC7YRqSj4"/>
           </div>
     
           <div className="survey-selections__row">

@@ -10,7 +10,7 @@ const AnswerText = ({ choice, config={}, selected=false, multipleAnswersAccepted
     return (
     <div className={'answer-text' + (selected ? ' text--selected': '')} 
             style={{
-                'background-color': config.backgroundColor ? config.backgroundColor: 'blue', 
+                'backgroundColor': config.backgroundColor ? config.backgroundColor: 'blue', 
                 'color': config.textColor ? config.textColor : 'white', 
                 'border': config.textColor ? `1px solid ${config.textColor}`: 'blue'}}>
         {config.mediaSrc && <BaseImage name={config.mediaSrc}/>}

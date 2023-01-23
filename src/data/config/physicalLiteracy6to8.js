@@ -1,23 +1,22 @@
 const physicalLiteracy6to8Config = {
     title: 'Physical Literacy Assessment',
     grades: '6-8',
-    surveyId: '1',
-    '1': {
+    'QID1715170247': {
         mediaSrc: 'girl_running_with_football',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px'
     },
-    '1.1': {
+    'QID1715170248': {
         mediaSrc: '',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px'
     },
-    '1.2': {
+    'QID1715170249': {
         mediaSrc: '',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px'
     },
-    '2': {
+    'QID1715170250': {
         mediaSrc: 'Guardians_and_kids_playing_soccer',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '250px',
@@ -45,7 +44,7 @@ const physicalLiteracy6to8Config = {
             mediaSrc: ''
         }
     },
-    '3': {
+    'QID1715170251': {
         mediaSrc: 'physical-activity',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
@@ -73,7 +72,7 @@ const physicalLiteracy6to8Config = {
             mediaSrc: ''
         }
     },
-    '4': {
+    'QID1715170252': {
         mediaSrc: 'kids_climbing',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
@@ -93,7 +92,7 @@ const physicalLiteracy6to8Config = {
             mediaSrc: ''
         }
     },
-    '5': {
+    'QID1715170253': {
         mediaSrc: 'kids_stretching',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
@@ -118,7 +117,7 @@ const physicalLiteracy6to8Config = {
             mediaSrc: ''
         }
     },
-    '6': {
+    'QID1715170254': {
         mediaSrc: 'kids_pushups',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
@@ -143,7 +142,7 @@ const physicalLiteracy6to8Config = {
             mediaSrc: ''
         }
     },
-    '7': {
+    'QID1715170255': {
         mediaSrc: 'Girl_throwing_ball_at_target',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
@@ -168,7 +167,7 @@ const physicalLiteracy6to8Config = {
             mediaSrc: ''
         }
     },
-    '8': {
+    'QID1715170256': {
         mediaSrc: 'kids_playing_soccer',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
@@ -188,7 +187,7 @@ const physicalLiteracy6to8Config = {
             mediaSrc: ''
         }
     },
-    '9': {
+    'QID1715170257': {
         mediaSrc: 'kids_playing_with_soccer_ball',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
@@ -208,7 +207,7 @@ const physicalLiteracy6to8Config = {
             mediaSrc: ''
         }
     },
-    '10': {
+    'QID1715170258': {
         mediaSrc: 'girl_and_chalk_weights',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
@@ -228,7 +227,7 @@ const physicalLiteracy6to8Config = {
             mediaSrc: ''
         }
     },
-    '11': {
+    'QID1715170259': {
         mediaSrc: 'four_different_sports',
         mediaSrcWidth: '600px',
         mediaSrcHeight: '230px',

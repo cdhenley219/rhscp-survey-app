@@ -5,11 +5,11 @@ import AnswerText from '../AnswerText/AnswerText';
 import './text-multiple-choice.css';
 
 const MultipleChoice = ({id, name, question, config={}, selectedAnswers, onSelect=()=>{}, multipleAnswersAccepted=false}) => {
-    const findSelectedAnswer = id => selectedAnswers.find(answer => answer.id === id);
+    const findSelectedAnswer = id => selectedAnswers.find(answer => answer === id);
     const containerEl = useRef(null);
     const choiceKeys = Object.keys(question.choices);
     useSlide('left', containerEl, id);
-
+    
     return (
         <div className="survey-multiple-choice" ref={containerEl}>
             <QuestionText question={question} config={config}/>

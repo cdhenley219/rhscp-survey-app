@@ -6,30 +6,28 @@ import TextMultipleChoice from '../components/TextMultipleChoice/TextMultipleCho
 import FreeTextChoice from '../components/FreeTextChoice/FreeTextChoice';
 //import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
 import MediaMultipleChoice from '../components/MediaMultipleChoice/MediaMultipleChoice';
-import {getData, getGradeImage, getConfig} from '../util/data';
+import {getGradeImage, getConfig} from '../util/data';
 import api from '../util/api';
 import './pages.css';
 
 const Survey = () => {
     const { surveyId } = useParams();
-    const surveyData = getData(surveyId);
     const [selectedAnswer, setSelectedAnswer] = useState([]); 
     const [surveyQuestionIndex, setSurveyQuestionIndex] = useState(0);
-    //const [currentQuestion, setCurrentQuestion] = useState(null);
-    const currentChoice = surveyData.data[surveyQuestionIndex];
     const [data, setData] = useState(null);
     const config = getConfig(surveyId);
-
+    
     const questionIdsList = (data && data.result) ? Object.keys(data.result.questions) : [];
     const numberOfQuestions =  questionIdsList.length;
     const currentQuestion = (data && data.result) ? data.result.questions[questionIdsList[surveyQuestionIndex]] : null;
     const currentConfig = config[questionIdsList[surveyQuestionIndex]];
-    console.log(currentConfig)
 
+    console.log(data);
     const selectAnswer = (answerId, answerSelected, multipleAnswersAccepted) => {
+        const choiceKeys = Object.keys(currentQuestion.choices);
         if (answerSelected) {
-            const foundAnswer = currentChoice.choices.find(answer => answer.id === answerId); 
-            currentChoice.multipleAnswersAccepted ? setSelectedAnswer([foundAnswer, ...selectedAnswer]) : setSelectedAnswer([foundAnswer]);
+            const foundAnswer = choiceKeys.find(key => key === answerId);
+            currentConfig.multipleAnswersAccepted ? setSelectedAnswer([foundAnswer, ...selectedAnswer]) : setSelectedAnswer([foundAnswer]);
         }
         else {
             const selectedAnswersClone = [...selectedAnswer];
@@ -50,9 +48,9 @@ const Survey = () => {
     };
 
     const getQuestionComponent = () => {
-        switch(currentChoice.question.type){
+        switch(currentQuestion.questionType.type){
             case 'MC':
-                if (currentChoice.question.isMediaMC) {
+                if (currentConfig.isMediaMC) {
                    return  <MediaMultipleChoice id={questionIdsList[surveyQuestionIndex]} 
                                                 question={currentQuestion} 
                                                 config={currentConfig} 
@@ -92,7 +90,7 @@ const Survey = () => {
     return (
         <div className="survey">
             <SurveyHeading gradesImageName={getGradeImage(config.grades)} title={config.title}/>
-            {currentQuestion &&  getQuestionComponent() } 
+            {currentQuestion && getQuestionComponent() } 
             <SurveyFooter    
                 goNext={goNext}
                 goPrevious={goPrevious}             

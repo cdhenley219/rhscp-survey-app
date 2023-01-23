@@ -12,8 +12,7 @@ const getAuth = async() => {
 
 const getSurvey = async (surveyId) => {
     try {
-        //const response = await fetch(`${URL_PREFIX}/surveys/${surveyId}`, {
-        const response = await fetch(`${URL_PREFIX}/surveys/SV_6QpwvgxC7YRqSj4`, {
+        const response = await fetch(`${URL_PREFIX}/surveys/${surveyId}`, {
             headers
         });
         return await response.json();
