@@ -11,6 +11,35 @@ export const getData = (surveyId) => {
     }
 }
 
+export const getDataWithConfig = (data, config) => {
+    const { result } = data;
+    const { questions } = result;
+
+    const dataWithConfig = {
+        id: result.id,
+        name: result.name,
+        questions: {}
+    };
+
+    for (let questionId in questions) {
+        dataWithConfig.questions[questionId] = questions[questionId];
+        dataWithConfig.questions[questionId].mediaSrc = config[questionId]? config[questionId].mediaSrc : null;
+        dataWithConfig.questions[questionId].mediaSrcWidth = config[questionId] ? config[questionId].mediaSrcWidth: null;
+        dataWithConfig.questions[questionId].mediaSrcHeight = config[questionId] ? config[questionId].mediaSrcHeight : null;
+
+        if (dataWithConfig.questions[questionId].choices) {
+
+            for (let choiceId in dataWithConfig.questions[questionId].choices) {
+                dataWithConfig.questions[questionId].choices[choiceId].mediaSrc = (config[questionId] && config[questionId][choiceId]) ? config[questionId][choiceId].mediaSrc : null;
+                dataWithConfig.questions[questionId].choices[choiceId].textColor = (config[questionId] && config[questionId][choiceId]) ? config[questionId][choiceId].textColor : null;
+                dataWithConfig.questions[questionId].choices[choiceId].backgroundColor = (config[questionId] && config[questionId][choiceId]) ? config[questionId][choiceId].backgroundColor : null;
+            }
+        }
+    }
+
+    return dataWithConfig;
+}
+
 export const getGradeImage = gradeName => {
     switch(gradeName) {
         case 'K-2': return 'apple';

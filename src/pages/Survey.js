@@ -6,7 +6,10 @@ import TextMultipleChoice from '../components/TextMultipleChoice/TextMultipleCho
 import FreeTextChoice from '../components/FreeTextChoice/FreeTextChoice';
 import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
 import MediaMultipleChoice from '../components/MediaMultipleChoice/MediaMultipleChoice';
-import {getData, getGradeImage} from '../util/data';
+import {getData, getGradeImage,getDataWithConfig} from '../util/data';
+import { surveyJson } from '../data/surveyJson';
+import physicalLiteracy3to5Config from '../data/config/physicalLiteracy3to5';
+import api from '../util/api';
 import './pages.css';
 
 const Survey = () => {
@@ -15,6 +18,8 @@ const Survey = () => {
     const [selectedAnswer, setSelectedAnswer] = useState([]); 
     const [surveyQuestionIndex, setSurveyQuestionIndex] = useState(0);
     const currentChoice = surveyData.data[surveyQuestionIndex];
+
+    getDataWithConfig(surveyJson, physicalLiteracy3to5Config);      
 
     const selectAnswer = (answerId, answerSelected, multipleAnswersAccepted) => {
         if (answerSelected) {
@@ -55,7 +60,7 @@ const Survey = () => {
     };
 
     useEffect(() => {  
-        
+        api.getSurvey();
     }, [surveyQuestionIndex]);
 
     return (

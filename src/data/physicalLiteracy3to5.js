@@ -23,7 +23,9 @@ const physicalLiteracy3to5Data = {
             label: 'Doing a Sport or Activity',
             type: 'TE',
             text: 'How many days/week?',
-            mediaSrc: physicalLiteracy3to5Config['2'].mediaSrc
+            mediaSrc: physicalLiteracy3to5Config['1.1'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy3to5Config['1.1'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracy3to5Config['1.1'].mediaSrcHeight
         },
         choices: null      
     },

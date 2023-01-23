@@ -2,9 +2,9 @@ const physicalLiteracy3to5Config = {
     grades: '3-5',
     surveyId: '1',
     '1': {
-        mediaSrc: 'juice',
-        mediaSrcWidth: '20px',
-        mediaSrcHeight: '20px'
+        mediaSrc: 'girl_running_with_football',
+        mediaSrcWidth: '300px',
+        mediaSrcHeight: '200px'
     },
     '1.1': {
         mediaSrc: ''
@@ -13,7 +13,9 @@ const physicalLiteracy3to5Config = {
         mediaSrc: ''
     },
     '2': {
-        mediaSrc: '',
+        mediaSrc: 'Guardians_and_kids_playing_soccer',
+        mediaSrcWidth: '250px',
+        mediaSrcHeight: '200px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -36,7 +38,7 @@ const physicalLiteracy3to5Config = {
         }
     },
     '3': {
-        mediaSrc: '',
+        mediaSrc: 'physical-activity',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -59,7 +61,7 @@ const physicalLiteracy3to5Config = {
         }
     },
     '4': {
-        mediaSrc: '',
+        mediaSrc: 'kids_climbing',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -77,7 +79,7 @@ const physicalLiteracy3to5Config = {
         }
     },
     '5': {
-        mediaSrc: '',
+        mediaSrc: 'kids_stretching',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -100,7 +102,7 @@ const physicalLiteracy3to5Config = {
         }
     },
     '6': {
-        mediaSrc: '',
+        mediaSrc: 'kids_pushups',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -123,7 +125,7 @@ const physicalLiteracy3to5Config = {
         }
     },
     '7': {
-        mediaSrc: '',
+        mediaSrc: 'Girl_throwing_ball_at_target',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -146,7 +148,7 @@ const physicalLiteracy3to5Config = {
         }
     },
     '8': {
-        mediaSrc: '',
+        mediaSrc: 'physical-activity',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -164,7 +166,7 @@ const physicalLiteracy3to5Config = {
         }
     },
     '9': {
-        mediaSrc: '',
+        mediaSrc: 'kids_playing_soccer',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -182,7 +184,7 @@ const physicalLiteracy3to5Config = {
         }
     },
     '10': {
-        mediaSrc: '',
+        mediaSrc: 'girl_and_chalk_weights',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -200,7 +202,7 @@ const physicalLiteracy3to5Config = {
         }
     },
     '11': {
-        mediaSrc: '',
+        mediaSrc: 'four_different_sports',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
