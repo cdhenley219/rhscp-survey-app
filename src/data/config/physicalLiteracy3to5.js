@@ -1,4 +1,5 @@
 const physicalLiteracy3to5Config = {
+    title: 'Physical Literacy Assessment',
     grades: '3-5',
     surveyId: '1',
     '1': {

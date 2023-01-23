@@ -1,4 +1,5 @@
 const physicalLiteracyKto2Config = {
+    title: 'Physical Literacy Assessment',
     surveyId: '1',
     grades: 'K-2',
     '1': {

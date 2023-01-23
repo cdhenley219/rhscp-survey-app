@@ -9,9 +9,11 @@ const getAuth = async() => {
     const response = await fetch('https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/forms&client_id=528312503789-t8mt8v91ngvjsi67tm1ltlpu3ka4kdg0.apps.googleusercontent.com&redirect_uri=http://localhost:3000&response_type=token');
     return await response.json();
 };
+
 const getSurvey = async (surveyId) => {
     try {
-        const response = await fetch(`${URL_PREFIX}/surveys/${surveyId}`, {
+        //const response = await fetch(`${URL_PREFIX}/surveys/${surveyId}`, {
+        const response = await fetch(`${URL_PREFIX}/surveys/SV_6QpwvgxC7YRqSj4`, {
             headers
         });
         return await response.json();
