@@ -4,10 +4,9 @@
     height: 100%;
     text-align: center;
 */
-/* Updated CSS to center align image and add bottom padding - LH */
+/* Updated CSS to center align image - LH || removed bottom padding JG */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    padding-bottom: 25px;
+    width: 50%;    
 }
