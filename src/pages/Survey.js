@@ -80,7 +80,7 @@ const Survey = () => {
             setData(resp);
         };
         getSurveyData();
-    }, []);
+    }, [surveyId]);
 
     /*useEffect(() => {
         const question = (data && data.result) ? data.result.questions[questionIdsList[surveyQuestionIndex]] : null;
