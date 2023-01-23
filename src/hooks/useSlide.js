@@ -5,7 +5,7 @@ const useSlide = (direction, ref, changedValue) => {
         void ref.current.offsetWidth;
         ref.current.classList.add(`slide-${direction}`);
 
-    }, [changedValue]);
+    }, [direction, ref, changedValue]);
 
 };
 
