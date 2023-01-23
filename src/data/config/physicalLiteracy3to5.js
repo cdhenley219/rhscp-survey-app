@@ -3,8 +3,8 @@ const physicalLiteracy3to5Config = {
     surveyId: '1',
     '1': {
         mediaSrc: 'girl_running_with_football',
-        mediaSrcWidth: '300px',
-        mediaSrcHeight: '200px'
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px'
     },
     '1.1': {
         mediaSrc: ''
@@ -14,8 +14,8 @@ const physicalLiteracy3to5Config = {
     },
     '2': {
         mediaSrc: 'Guardians_and_kids_playing_soccer',
-        mediaSrcWidth: '250px',
-        mediaSrcHeight: '200px',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -39,6 +39,9 @@ const physicalLiteracy3to5Config = {
     },
     '3': {
         mediaSrc: 'physical-activity',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
+        
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -62,6 +65,8 @@ const physicalLiteracy3to5Config = {
     },
     '4': {
         mediaSrc: 'kids_climbing',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -80,6 +85,8 @@ const physicalLiteracy3to5Config = {
     },
     '5': {
         mediaSrc: 'kids_stretching',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -103,6 +110,8 @@ const physicalLiteracy3to5Config = {
     },
     '6': {
         mediaSrc: 'kids_pushups',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -126,6 +135,8 @@ const physicalLiteracy3to5Config = {
     },
     '7': {
         mediaSrc: 'Girl_throwing_ball_at_target',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -148,7 +159,9 @@ const physicalLiteracy3to5Config = {
         }
     },
     '8': {
-        mediaSrc: 'physical-activity',
+        mediaSrc: 'kids_playing_soccer',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -166,7 +179,9 @@ const physicalLiteracy3to5Config = {
         }
     },
     '9': {
-        mediaSrc: 'kids_playing_soccer',
+        mediaSrc: 'kids_playing_with_soccer_ball',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -185,6 +200,8 @@ const physicalLiteracy3to5Config = {
     },
     '10': {
         mediaSrc: 'girl_and_chalk_weights',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -203,6 +220,8 @@ const physicalLiteracy3to5Config = {
     },
     '11': {
         mediaSrc: 'four_different_sports',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
