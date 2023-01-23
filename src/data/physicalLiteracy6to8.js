@@ -58,7 +58,8 @@ const physicalLiteracy6to8Data = {
                 backgroundColor: physicalLiteracy6to8Config['2']['1'].textColor, 
                 textColor: physicalLiteracy6to8Config['2']['1'].backgroundColor, 
                 mediaSrc: physicalLiteracy6to8Config['2']['1'].mediaSrc,
-                icon: physicalLiteracy6to8Config['2']['1'].icon
+                icon: physicalLiteracy6to8Config['2']['1'].icon,
+                iconColor: physicalLiteracy6to8Config['2']['1'].iconColor
             },
             {
                 id: '2',

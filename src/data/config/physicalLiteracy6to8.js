@@ -24,7 +24,8 @@ const physicalLiteracy6to8Config = {
             backgroundColor: '#0b3e71',           
             textColor: 'white',
             mediaSrc: '',
-            icon: 'thumbs-up'   
+            icon: 'thumbs-up',
+            iconColor: 'green'
 
         },
         '2' : {           
