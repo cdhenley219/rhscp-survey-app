@@ -5,8 +5,8 @@ import physicalLiteracy6to8Config from '../data/config/physicalLiteracy6to8';
 
 export const getConfig = (surveyId) => {
     switch(surveyId) {
-        case '1': return physicalLiteracyKto2Config;
-        case '2': return physicalLiteracy3to5Config;
+        case 'SV_cxcoJ9iKSkUCbIi': return physicalLiteracyKto2Config;
+        case 'SV_cRYrYE4uneyaFMy': return physicalLiteracy3to5Config;
         case 'SV_6QpwvgxC7YRqSj4': return physicalLiteracy6to8Config;
         default: return [];
     }
