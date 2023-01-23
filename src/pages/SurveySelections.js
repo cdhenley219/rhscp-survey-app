@@ -11,9 +11,9 @@ const SurveySelections = () => {
             <SurveySelection title="Nutrition" imageName="nutrition"/>
             <SurveySelection title="Physical Activity" 
                               imageName="physical-activity" 
-                              gradeKTo2SurveyId="1"
-                              grade3To5SurveyId="2"
-                              grade6To8SurveyId="3"/>
+                              gradeKTo2SurveyId="SV_cxcoJ9iKSkUCbIi"
+                              grade3To5SurveyId="SV_cRYrYE4uneyaFMy"
+                              grade6To8SurveyId="SV_6QpwvgxC7YRqSj4"/>
           </div>
     
           <div className="survey-selections__row">

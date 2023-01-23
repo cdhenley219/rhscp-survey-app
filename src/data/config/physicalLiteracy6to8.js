@@ -1,27 +1,27 @@
 const physicalLiteracy6to8Config = {
+    title: 'Physical Literacy Assessment',
     grades: '6-8',
-    surveyId: '1',
-    '1': {
+    'QID1715170247': {
         mediaSrc: 'girl_running_with_football',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px'
     },
-    '1.1': {
+    'QID1715170248': {
         mediaSrc: '',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px'
     },
-    '1.2': {
+    'QID1715170249': {
         mediaSrc: '',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px'
     },
-    '2': {
+    'QID1715170250': {
         mediaSrc: 'Guardians_and_kids_playing_soccer',
         mediaSrcWidth: '350px',
-        mediaSrcHeight: '230px',
+        mediaSrcHeight: '250px',
         '1' : {           
-            backgroundColor: '#0b3e71',           
+            backgroundColor: '#850909',           
             textColor: 'white',
             mediaSrc: '',
             icon: 'thumbs-up',
@@ -29,27 +29,27 @@ const physicalLiteracy6to8Config = {
 
         },
         '2' : {           
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#850909',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#850909',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#850909',
             textColor: 'white',
             mediaSrc: ''
         }
     },
-    '3': {
+    'QID1715170251': {
         mediaSrc: 'physical-activity',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#0543ab',
             textColor: 'white',
             mediaSrc: '',
             mediaSrcWidth: '',
@@ -57,179 +57,179 @@ const physicalLiteracy6to8Config = {
            
         },
         '2' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#0543ab',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#0543ab',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#0543ab',
             textColor: 'white',
             mediaSrc: ''
         }
     },
-    '4': {
+    'QID1715170252': {
         mediaSrc: 'kids_climbing',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#bf3e13',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#bf3e13',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#bf3e13',
             textColor: 'white',
             mediaSrc: ''
         }
     },
-    '5': {
+    'QID1715170253': {
         mediaSrc: 'kids_stretching',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#077DA2',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#077DA2',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#077DA2',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#077DA2',
             textColor: 'white',
             mediaSrc: ''
         }
     },
-    '6': {
+    'QID1715170254': {
         mediaSrc: 'kids_pushups',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#02393e',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#02393e',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#02393e',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#02393e',
             textColor: 'white',
             mediaSrc: ''
         }
     },
-    '7': {
+    'QID1715170255': {
         mediaSrc: 'Girl_throwing_ball_at_target',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#e0155b',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#e0155b',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#e0155b',
             textColor: 'white',
             mediaSrc: ''
         },
         '4' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#e0155b',
             textColor: 'white',
             mediaSrc: ''
         }
     },
-    '8': {
+    'QID1715170256': {
         mediaSrc: 'kids_playing_soccer',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#800080',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#800080',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#800080',
             textColor: 'white',
             mediaSrc: ''
         }
     },
-    '9': {
+    'QID1715170257': {
         mediaSrc: 'kids_playing_with_soccer_ball',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#ea0101',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#ea0101',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#ea0101',
             textColor: 'white',
             mediaSrc: ''
         }
     },
-    '10': {
+    'QID1715170258': {
         mediaSrc: 'girl_and_chalk_weights',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px',
         '1' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#07492e',
             textColor: 'white',
             mediaSrc: ''
         },
         '2' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#07492e',
             textColor: 'white',
             mediaSrc: ''
         },
         '3' : {
-            backgroundColor: '#0b3e71',
+            backgroundColor: '#07492e',
             textColor: 'white',
             mediaSrc: ''
         }
     },
-    '11': {
+    'QID1715170259': {
         mediaSrc: 'four_different_sports',
-        mediaSrcWidth: '350px',
+        mediaSrcWidth: '600px',
         mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: '#0b3e71',

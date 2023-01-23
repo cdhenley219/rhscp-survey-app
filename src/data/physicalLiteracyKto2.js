@@ -185,8 +185,8 @@ const physicalLiteracyKto2Data = {
     {
         question: {
             id: '7',
-            label: '',
-            type: 'MC',
+            label: '',            
+            type: 'TE',
             text: 'What exercise is this person doing?', //push ups
             mediaSrc: physicalLiteracyKto2Config['7'].mediaSrc
         },
@@ -432,7 +432,7 @@ const physicalLiteracyKto2Data = {
     {
         question: {
             id: '15',
-            type: 'MC',
+            type: 'TE',
             label: '',
             text: 'How do you feel about going to gym class?',
             mediaSrc: physicalLiteracyKto2Config['15'].mediaSrc
@@ -471,7 +471,7 @@ const physicalLiteracyKto2Data = {
         question: {
             id: '16',
             label: '',
-            type: 'MC',
+            type: 'TE',
             text: 'How confident are you at participating in different gym class activities?',
             mediaSrc: physicalLiteracyKto2Config['16'].mediaSrc
         },
@@ -510,7 +510,7 @@ const physicalLiteracyKto2Data = {
         question: {
             id: '17',
             label: '',
-            type: 'MC',
+            type: 'TE',
             text: 'How confident are you at throwing a ball to a target 20 feet away?',
             mediaSrc: physicalLiteracyKto2Config['17'].mediaSrc
         },
@@ -549,7 +549,7 @@ const physicalLiteracyKto2Data = {
         question: {
             id: '18',
             label: '',
-            type: 'MC',
+            type: 'TE',
             text: 'When you are at recess, do you like to play alone or with others?',
             mediaSrc: physicalLiteracyKto2Config['18'].mediaSrc
         },
@@ -580,7 +580,7 @@ const physicalLiteracyKto2Data = {
     {
         question: {
             id: '19',
-            type: 'MC',
+            type: 'TE',
             text: 'Do you have friends you regularly play outside with that live near you?',
             mediaSrc: physicalLiteracyKto2Config['19'].mediaSrc
         },
@@ -611,7 +611,7 @@ const physicalLiteracyKto2Data = {
     {
         question: {
             id: '20',
-            type: 'MC',
+            type: 'TE',
             text: 'When you are at recess/gym class, do you feel like you have enough energy to play as much as you would like?',
             mediaSrc: physicalLiteracyKto2Config['20'].mediaSrc
         },
@@ -642,7 +642,7 @@ const physicalLiteracyKto2Data = {
     {
         question: {
             id: '21',
-            type: 'MC',
+            type: 'TE',
             label: '',
             text: 'If c-3 would you like to learn more skills to have more confidence in gym class and other sporting activities?',
             mediaSrc: physicalLiteracyKto2Config['21'].mediaSrc

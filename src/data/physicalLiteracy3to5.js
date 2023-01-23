@@ -383,7 +383,9 @@ const physicalLiteracy3to5Data = {
             id: '11',
             type: 'MC',
             text: 'If c-3 would you like to learn more skills to have more confidence in gym class and other sporting activities?',
-            mediaSrc: physicalLiteracy3to5Config['11'].mediaSrc
+            mediaSrc: physicalLiteracy3to5Config['11'].mediaSrc,
+            mediaSrcWidth: physicalLiteracy3to5Config['11'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracy3to5Config['11'].mediaSrcHeight 
         },
         choices: [
             {
@@ -392,8 +394,8 @@ const physicalLiteracy3to5Data = {
                 textColor: physicalLiteracy3to5Config['11']['1'].textColor, 
                 backgroundColor: physicalLiteracy3to5Config['11']['1'].backgroundColor, 
                 mediaSrc: physicalLiteracy3to5Config['11']['1'].mediaSrc,
-                mediaSrcWidth: physicalLiteracy3to5Config['11'].mediaSrcWidth,
-                mediaSrcHeight: physicalLiteracy3to5Config['11'].mediaSrcHeight 
+                mediaSrcWidth: physicalLiteracy3to5Config['11']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracy3to5Config['11']['1'].mediaSrcHeight 
             },
             {
                 id: '2',

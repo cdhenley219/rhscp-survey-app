@@ -1,7 +1,7 @@
 const physicalLiteracyKto2Config = {
-    surveyId: '1',
+    title: 'Physical Literacy Assessment',
     grades: 'K-2',
-    '1': {
+    'QID1': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
@@ -17,7 +17,7 @@ const physicalLiteracyKto2Config = {
             mediaSrc: 'Logo'
         }
     },
-    '2': {
+    'QID6': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
@@ -33,7 +33,7 @@ const physicalLiteracyKto2Config = {
             mediaSrc: ''
         }
     },
-    '3': {
+    'QID3': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
@@ -46,7 +46,7 @@ const physicalLiteracyKto2Config = {
             mediaSrc: ''
         }
     },
-    '4': {
+    'QID5': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
@@ -59,7 +59,7 @@ const physicalLiteracyKto2Config = {
             mediaSrc: ''
         }
     },
-    '5': {
+    'QID7': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
@@ -72,7 +72,7 @@ const physicalLiteracyKto2Config = {
             mediaSrc: ''
         }
     },
-    '6': {
+    'QID8': {
         mediaSrc: '',
         '1' : {
             mediaSrc: ''
@@ -87,7 +87,7 @@ const physicalLiteracyKto2Config = {
             mediaSrc: ''
         }
     },
-    '7': {
+    'QID9': {
         mediaSrc: '',
         '1' : {
             mediaSrc: ''
@@ -99,20 +99,7 @@ const physicalLiteracyKto2Config = {
             mediaSrc: ''
         }
     },
-    '8': {
-        mediaSrc: '',
-        isMediaMC: true,
-        '1' : {
-            mediaSrc: ''
-        },
-        '2' : {
-            mediaSrc: ''
-        },
-        '3' : {
-            mediaSrc: ''
-        }
-    },
-    '9': {
+    'QID11': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
@@ -125,7 +112,20 @@ const physicalLiteracyKto2Config = {
             mediaSrc: ''
         }
     },
-    '10': {
+    'QID14': {
+        mediaSrc: '',
+        isMediaMC: true,
+        '1' : {
+            mediaSrc: ''
+        },
+        '2' : {
+            mediaSrc: ''
+        },
+        '3' : {
+            mediaSrc: ''
+        }
+    },
+    'QID13': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {

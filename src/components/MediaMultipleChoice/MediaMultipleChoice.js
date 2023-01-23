@@ -4,55 +4,38 @@ import MediaMultipleChoiceAnswer from '../MediaMultipleChoiceAnswer/MediaMultipl
 import QuestionText from '../QuestionText/QuestionText';
 import './media-multiple-choice.css';
 
-const MediaMultipleChoice = ({choice, selectedAnswers, onSelect=()=>{}, multipleAnswersAccepted=false}) => {
+const MediaMultipleChoice = ({id, question, config, selectedAnswers, onSelect=()=>{}, multipleAnswersAccepted=false}) => {
     const containerEl = useRef(null);
     const findSelectedAnswer = id => selectedAnswers.find(answer => answer.id === id);
-    const numRows = Array.from({ length: choice.choices.length/2 }, (value, index) => index);
+    const numRows = Array.from({ length: question.choices.length/2 }, (value, index) => index);
     const choicesArrayOfArrays = [];
-    useSlide('up', containerEl, choice);
-    for(let i = 0; i < choice.choices.length; i=i+2){
-        choicesArrayOfArrays.push([choice.choices[i], choice.choices[i+1]])
+    const choiceKeys = Object.keys(question.choices);
+    useSlide('up', containerEl, id);
+
+    for(let i = 0; i < choiceKeys.length; i=i+2){
+        choicesArrayOfArrays.push([question.choices[i], question.choices[i+1]])
     }
 
     return (
-        <div className="survey-media-multiple-choice slide-up" ref={containerEl}>
-            <QuestionText choice={choice}/>
+        <div className="survey-media-multiple-choice" ref={containerEl}>
+            <QuestionText question={question} config={config}/>
             
             { numRows.map ((row) => (
                 <div className="survey-media-multiple-choice__row">
                     {choicesArrayOfArrays[row].map((answer, index) => (
-                        <MediaMultipleChoiceAnswer 
+                    <MediaMultipleChoiceAnswer 
                         key={answer.id} 
                         id={answer.id}
-                        text={answer.text} 
-                        value={answer.text}
-                        name={answer.name}
-                        mediaSrc={answer.mediaSrc}
+                        name={id}
+                        choice={answer}
+                        config={config[choiceKeys[index]]}
                         multipleAnswersAccepted={multipleAnswersAccepted}
                         selected={Array.isArray(selectedAnswers) ? findSelectedAnswer(answer.id) : selectedAnswers.id === answer.id}
                         onSelect={onSelect}/>
                     ))}
                 </div>
             ))}
-
-            {/* {numRows.map(num => (
-                 <div className="survey-media-multiple-choice__row">
-                    {choice.answers.map((answer, index) => (
-                        index/num.length === num && 
-                        <MediaMultipleChoiceAnswer 
-                            key={answer.id} 
-                            id={answer.id}
-                            text={answer.text} 
-                            value={answer.text}
-                            name={answer.name}
-                            multipleAnswersAccepted={multipleAnswersAccepted}
-                            selected={Array.isArray(selectedAnswers) ? findSelectedAnswer(answer.id) : selectedAnswers.id === answer.id}
-                            onSelect={onSelect}/>
-                    ))}
-                 </div>
-            ))} */}
         </div>
-        
     );
 };
 
