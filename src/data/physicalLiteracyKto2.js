@@ -12,28 +12,38 @@ const physicalLiteracyKto2Data = {
             type: 'MC',
             text: 'Which picture has a ball?',
             isMediaMC: physicalLiteracyKto2Config['1'].isMediaMC,
-            mediaSrc: physicalLiteracyKto2Config['1'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['1'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['1'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['1'].mediaSrcHeight
         },
         choices: [
             {
                 id: '1',
                 text: '',
-                mediaSrc: physicalLiteracyKto2Config['1']['1'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['1']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['1']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['1']['1'].mediaSrcHeight
             },
             {
                 id: '2',
                 text: '',
-                mediaSrc: physicalLiteracyKto2Config['1']['2'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['1']['2'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['1']['2'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['1']['2'].mediaSrcHeight
             },
             {
                 id: '3',
                 text: '',
-                mediaSrc: physicalLiteracyKto2Config['1']['3'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['1']['3'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['1']['3'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['1']['3'].mediaSrcHeight
             },
             {
                 id: '4',
                 text: '',
-                mediaSrc: physicalLiteracyKto2Config['1']['4'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['1']['4'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['1']['4'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['1']['4'].mediaSrcHeight
             }
         ]
     },
@@ -44,28 +54,37 @@ const physicalLiteracyKto2Data = {
             type: 'MC',
             text: 'Which video shows someone skipping?',
             isMediaMC: physicalLiteracyKto2Config['2'].isMediaMC,
-            mediaSrc: physicalLiteracyKto2Config['2'].mediaSrc
+            mediaSrcWidth: physicalLiteracyKto2Config['2'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['2'].mediaSrcHeight
         },
         choices: [
             {
                 id: '1',
                 text: '',
-                mediaSrc: physicalLiteracyKto2Config['2']['1'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['2']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['2']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['2']['1'].mediaSrcHeight 
             },
             {
                 id: '2',
                 text: '',
-                mediaSrc: physicalLiteracyKto2Config['2']['2'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['2']['2'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['2']['2'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['2']['2'].mediaSrcHeight  
             },
             {
                 id: '3',
                 text: '',
-                mediaSrc: physicalLiteracyKto2Config['2']['3'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['2']['3'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['2']['3'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['2']['3'].mediaSrcHeight  
             },
             {
                 id: '4',
                 text: '',
-                mediaSrc: physicalLiteracyKto2Config['2']['4'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['2']['4'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['2']['4'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['2']['4'].mediaSrcHeight  
             }
         ]
     },
@@ -82,17 +101,30 @@ const physicalLiteracyKto2Data = {
             {
                 id: '1',
                 text: 'baseball bat',
-                mediaSrc: physicalLiteracyKto2Config['3']['1'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['3']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['3']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['3']['1'].mediaSrcHeight   
             },
             {
                 id: '2',
                 text: 'tennis net',
-                mediaSrc: physicalLiteracyKto2Config['3']['2'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['3']['2'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['3']['2'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['3']['2'].mediaSrcHeight   
             },
             {
                 id: '3',
                 text: 'soccer ball',
-                mediaSrc: physicalLiteracyKto2Config['3']['3'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['3']['3'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['3']['3'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['3']['3'].mediaSrcHeight   
+            },
+            {
+                id: '3',
+                text: 'baseball bat',
+                mediaSrc: physicalLiteracyKto2Config['3']['4'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['3']['4'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['3']['4'].mediaSrcHeight   
             }
         ]
     },
@@ -109,17 +141,31 @@ const physicalLiteracyKto2Data = {
             {
                 id: '1',
                 text: 'bike',
-                mediaSrc: physicalLiteracyKto2Config['4']['1'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['4']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['4']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['4']['1'].mediaSrcHeight 
             },
             {
                 id: '2',
                 text: 'ball',
-                mediaSrc: physicalLiteracyKto2Config['4']['2'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['4']['2'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['4']['2'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['4']['2'].mediaSrcHeight 
             },
             {
                 id: '3',
                 text: 'weights',
-                mediaSrc: physicalLiteracyKto2Config['4']['3'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['4']['3'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['4']['3'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['4']['3'].mediaSrcHeight 
+            },
+/*Add new image*/
+            {
+                id: '4',
+                text: 'electronics',
+                mediaSrc: physicalLiteracyKto2Config['4']['4'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['4']['4'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['4']['4'].mediaSrcHeight 
             }
         ]
     },
@@ -136,17 +182,31 @@ const physicalLiteracyKto2Data = {
             {
                 id: '1',
                 text: 'eyes',
-                mediaSrc: physicalLiteracyKto2Config['5']['1'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['5']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['5']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['5']['1'].mediaSrcHeight
             },
             {
                 id: '2',
                 text: 'teeth',
-                mediaSrc: physicalLiteracyKto2Config['5']['2'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['5']['2'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['5']['2'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['5']['2'].mediaSrcHeight
             },
             {
                 id: '3',
                 text: 'heart',
-                mediaSrc: physicalLiteracyKto2Config['5']['3'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['5']['3'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['5']['3'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['5']['3'].mediaSrcHeight 
+            },
+/*Add new image*/
+            {
+                id: '4',
+                text: 'hand',
+                mediaSrc: physicalLiteracyKto2Config['5']['4'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['5']['4'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['5']['4'].mediaSrcHeight 
             }
         ]
     },
@@ -157,28 +217,40 @@ const physicalLiteracyKto2Data = {
             type: 'MC',
             text: 'What sport is being played?', //kid playing basketball
             isMediaMC: physicalLiteracyKto2Config['6'].isMediaMC,
-            mediaSrc: physicalLiteracyKto2Config['6'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['6'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['6'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['6'].mediaSrcHeight
         },
         choices: [
             {
                 id: '1',
-                text: 'basketball',
+                text: 'Basketball',
+                isMediaMC: physicalLiteracyKto2Config['6']['1'].isMediaMC,
+                mediaSrc: physicalLiteracyKto2Config['6']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['6']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['6']['1'].mediaSrcHeight
 
             },
             {
                 id: '2',
-                text: 'tennis',
-                mediaSrc: physicalLiteracyKto2Config['6']['2'].mediaSrc 
+                text: 'Baseball',
+                mediaSrc: physicalLiteracyKto2Config['6']['2'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['6']['2'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['6']['2'].mediaSrcHeight
             },
             {
                 id: '3',
-                text: 'soccer',
-                mediaSrc: physicalLiteracyKto2Config['6']['3'].mediaSrc 
+                text: 'Football',
+                mediaSrc: physicalLiteracyKto2Config['6']['3'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['6']['3'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['6']['3'].mediaSrcHeight
             },
             {
                 id: '4',
-                text: '',
-                mediaSrc: physicalLiteracyKto2Config['6']['4'].mediaSrc 
+                text: 'Football',
+                mediaSrc: physicalLiteracyKto2Config['6']['4'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['6']['4'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['6']['4'].mediaSrcHeight
             }
         ]
     },
@@ -188,13 +260,18 @@ const physicalLiteracyKto2Data = {
             label: '',
             type: 'MC',
             text: 'What exercise is this person doing?', //push ups
-            mediaSrc: physicalLiteracyKto2Config['7'].mediaSrc
+            isMediaMC: physicalLiteracyKto2Config['7'].isMediaMC,
+            mediaSrc: physicalLiteracyKto2Config['7'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['7'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['7'].mediaSrcHeight
         },
         choices: [
             {
                 id: '1',
                 text: 'jumping jacks',
-                mediaSrc: physicalLiteracyKto2Config['7']['1'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['7']['1'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['7']['1'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['7']['1'].mediaSrcHeight
             },
             {
                 id: '2',
@@ -216,21 +293,26 @@ const physicalLiteracyKto2Data = {
             text: 'Which outfit would you wear to play outside?',
             isMediaMC: physicalLiteracyKto2Config['8'].isMediaMC,
             mediaSrc: physicalLiteracyKto2Config['8'].mediaSrc
+            
         },
         choices: [
             {
                 id: '1',
                 text: 'casual clothes',
-                mediaSrc: physicalLiteracyKto2Config['8']['1'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['8']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['8']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['8']['1'].mediaSrcHeight
             },
             {
                 id: '2',
-                text: 'Halloween costume',
-                mediaSrc: physicalLiteracyKto2Config['8']['2'].mediaSrc 
+                text: 'formal event clothes',
+                mediaSrc: physicalLiteracyKto2Config['8']['2'].mediaSrc ,
+                mediaSrcWidth: physicalLiteracyKto2Config['8']['2'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['8']['2'].mediaSrcHeight
             },
             {
                 id: '3',
-                text: 'formal event clothes',
+                text: 'Halloween costume',
                 mediaSrc: physicalLiteracyKto2Config['8']['3'].mediaSrc 
             }
         ]
@@ -242,24 +324,39 @@ const physicalLiteracyKto2Data = {
             type: 'MC',
             text: 'What area is the safest to play outdoor games at?',
             isMediaMC: physicalLiteracyKto2Config['9'].isMediaMC,
-            mediaSrc: physicalLiteracyKto2Config['9'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['9'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['9'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['9'].mediaSrcHeight
         },
         choices: [
             {
                 id: '1',
-                text: 'casual clothes',
-                mediaSrc: physicalLiteracyKto2Config['9']['1'].mediaSrc 
+                text: 'construction site',
+                mediaSrc: physicalLiteracyKto2Config['9']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['9']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['9']['1'].mediaSrcHeight
             },
             {
                 id: '2',
-                text: 'Halloween costume',
-                mediaSrc: physicalLiteracyKto2Config['9']['2'].mediaSrc 
+                text: 'open field',
+                mediaSrc: physicalLiteracyKto2Config['9']['2'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['9']['2'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['9']['2'].mediaSrcHeight
             },
             {
                 id: '3',
-                text: 'formal event clothes',
+                text: 'big city',
+                mediaSrc: physicalLiteracyKto2Config['9']['3'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['9']['3'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['9']['3'].mediaSrcHeight
+            },
+            {
+                id: '4',
+                text: 'Add a new image',
                 mediaSrc: physicalLiteracyKto2Config['9']['3'].mediaSrc 
             }
+            
+            
         ]
     },
     {
@@ -269,23 +366,40 @@ const physicalLiteracyKto2Data = {
             type: 'MC',
             text: 'What is the best drink to have when playing outside?',
             isMediaMC: physicalLiteracyKto2Config['10'].isMediaMC,
-            mediaSrc: physicalLiteracyKto2Config['10'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['10'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['10'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['10'].mediaSrcHeight
+            
         },
         choices: [
             {
                 id: '1',
                 text: 'soda',
-                mediaSrc: physicalLiteracyKto2Config['10']['1'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['10']['1'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['10']['1'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['10']['1'].mediaSrcHeight
             },
             {
                 id: '2',
                 text: 'juice',
-                mediaSrc: physicalLiteracyKto2Config['10']['2'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['10']['2'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['10']['2'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['10']['2'].mediaSrcHeight
             },
             {
                 id: '3',
                 text: 'water',
-                mediaSrc: physicalLiteracyKto2Config['10']['3'].mediaSrc 
+                mediaSrc: physicalLiteracyKto2Config['10']['3'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['10']['3'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['10']['3'].mediaSrcHeight
+            },
+            {
+                id: '4',
+                text: 'water',
+                mediaSrc: physicalLiteracyKto2Config['10']['4'].mediaSrc,
+                mediaSrcWidth: physicalLiteracyKto2Config['10']['4'].mediaSrcWidth,
+                mediaSrcHeight: physicalLiteracyKto2Config['10']['4'].mediaSrcHeight
+                
             }
         ]
     },
@@ -295,7 +409,9 @@ const physicalLiteracyKto2Data = {
             label: 'Doing a Sport or Activity',
             type: 'TE',
             text: 'Do you play a sport or do an after school activity? If yes, what is it?',
-            mediaSrc: physicalLiteracyKto2Config['11'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['11'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['11'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['11'].mediaSrcHeight
         },
         choices: null
     },
@@ -305,7 +421,10 @@ const physicalLiteracyKto2Data = {
             label: 'Doing a Sport or Activity',
             type: 'TE',
             text: 'How many days/week?',
-            mediaSrc: physicalLiteracyKto2Config['11.1'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['11.1'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['11.1'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['11.1'].mediaSrcHeight
+            
         },
         choices: null      
     },
@@ -315,7 +434,9 @@ const physicalLiteracyKto2Data = {
             label: 'Doing a Sport or Activity',
             type: 'TE',
             text: 'How long each day?',
-            mediaSrc: physicalLiteracyKto2Config['11.2'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['11.2'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['11.2'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['11.2'].mediaSrcHeight
         },
         choices: null
     },
@@ -325,7 +446,9 @@ const physicalLiteracyKto2Data = {
             type: 'MC',
             label: '',
             text: 'Are your parents active with you after school or on weekends? (like walking, bike riding, playing sports)',
-            mediaSrc: physicalLiteracyKto2Config['12'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['12'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['12'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['12'].mediaSrcHeight
         },
         choices: [
             {
@@ -364,7 +487,9 @@ const physicalLiteracyKto2Data = {
             type: 'MC',
             label: '',
             text: 'When you have free time after school or on weekends, how do you spend it?',
-            mediaSrc: physicalLiteracyKto2Config['13'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['13'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['13'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['13'].mediaSrcHeight
         },
         choices: [
             {
@@ -403,7 +528,9 @@ const physicalLiteracyKto2Data = {
             type: 'MC',
             label: '',
             text: 'When you have recess or free time at school, how do you spend it?',
-            mediaSrc: physicalLiteracyKto2Config['14'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['14'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['14'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['14'].mediaSrcHeight
         },
         choices: [
             {
@@ -435,7 +562,9 @@ const physicalLiteracyKto2Data = {
             type: 'MC',
             label: '',
             text: 'How do you feel about going to gym class?',
-            mediaSrc: physicalLiteracyKto2Config['15'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['15'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['15'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['15'].mediaSrcHeight
         },
         choices: [
         {
@@ -473,7 +602,9 @@ const physicalLiteracyKto2Data = {
             label: '',
             type: 'MC',
             text: 'How confident are you at participating in different gym class activities?',
-            mediaSrc: physicalLiteracyKto2Config['16'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['16'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['16'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['16'].mediaSrcHeight
         },
         choices: [
             {
@@ -512,7 +643,9 @@ const physicalLiteracyKto2Data = {
             label: '',
             type: 'MC',
             text: 'How confident are you at throwing a ball to a target 20 feet away?',
-            mediaSrc: physicalLiteracyKto2Config['17'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['17'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['17'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['17'].mediaSrcHeight
         },
         choices: [
             {
@@ -551,7 +684,9 @@ const physicalLiteracyKto2Data = {
             label: '',
             type: 'MC',
             text: 'When you are at recess, do you like to play alone or with others?',
-            mediaSrc: physicalLiteracyKto2Config['18'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['18'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['18'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['18'].mediaSrcHeight
         },
         choices: [
             {
@@ -582,7 +717,9 @@ const physicalLiteracyKto2Data = {
             id: '19',
             type: 'MC',
             text: 'Do you have friends you regularly play outside with that live near you?',
-            mediaSrc: physicalLiteracyKto2Config['19'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['19'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['19'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['19'].mediaSrcHeight
         },
         choices: [
             {
@@ -613,7 +750,9 @@ const physicalLiteracyKto2Data = {
             id: '20',
             type: 'MC',
             text: 'When you are at recess/gym class, do you feel like you have enough energy to play as much as you would like?',
-            mediaSrc: physicalLiteracyKto2Config['20'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['20'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['20'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['20'].mediaSrcHeight
         },
         choices: [
             {
@@ -645,7 +784,9 @@ const physicalLiteracyKto2Data = {
             type: 'MC',
             label: '',
             text: 'If c-3 would you like to learn more skills to have more confidence in gym class and other sporting activities?',
-            mediaSrc: physicalLiteracyKto2Config['21'].mediaSrc
+            mediaSrc: physicalLiteracyKto2Config['21'].mediaSrc,
+            mediaSrcWidth: physicalLiteracyKto2Config['21'].mediaSrcWidth,
+            mediaSrcHeight: physicalLiteracyKto2Config['21'].mediaSrcHeight
         },
         choices: [
             {
