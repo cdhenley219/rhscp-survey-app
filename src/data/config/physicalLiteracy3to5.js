@@ -3,7 +3,8 @@ const physicalLiteracy3to5Config = {
     grades: '3-5',
     surveyId: '1',
     'QID1715170192': {
-        mediaSrc: 'girl_running_with_football',
+        mediaSrc: '',
+        mediaSrc1: 'kids_playing_video',
         mediaSrcWidth: '350px',
         mediaSrcHeight: '230px'
     },
