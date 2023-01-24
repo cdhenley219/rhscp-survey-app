@@ -22,7 +22,6 @@ const Survey = () => {
     const currentQuestion = (data && data.result) ? data.result.questions[questionIdsList[surveyQuestionIndex]] : null;
     const currentConfig = config[questionIdsList[surveyQuestionIndex]];
 
-    console.log(data);
     const selectAnswer = (answerId, answerSelected, multipleAnswersAccepted) => {
         const choiceKeys = Object.keys(currentQuestion.choices);
         if (answerSelected) {
@@ -79,18 +78,14 @@ const Survey = () => {
             const resp = await api.getSurvey(surveyId);
             setData(resp);
         };
+
         getSurveyData();
     }, [surveyId]);
-
-    /*useEffect(() => {
-        const question = (data && data.result) ? data.result.questions[questionIdsList[surveyQuestionIndex]] : null;
-
-    }, [surveyQuestionIndex]);*/
 
     return (
         <div className="survey">
             <SurveyHeading gradesImageName={getGradeImage(config.grades)} title={config.title}/>
-            {currentQuestion && getQuestionComponent() } 
+            {currentQuestion && getQuestionComponent()} 
             <SurveyFooter    
                 goNext={goNext}
                 goPrevious={goPrevious}             
