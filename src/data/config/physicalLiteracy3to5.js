@@ -5,7 +5,23 @@ const physicalLiteracy3to5Config = {
     'QID1715170192': {
         mediaSrc: 'girl_running_with_football',
         mediaSrcWidth: '350px',
-        mediaSrcHeight: '230px'
+        mediaSrcHeight: '230px',
+        '1' : {           
+            backgroundColor: '#008080',           
+            textColor: 'white',
+            mediaSrc: '',
+            icon: 'thumbs-up',
+            iconColor: 'white'
+
+        },
+        '2' : {           
+            backgroundColor: '#008080',           
+            textColor: 'white',
+            mediaSrc: '',
+            icon: 'thumbs-down',
+            iconColor: 'white'
+
+        }
     },
     'QID1715170193': {
         mediaSrc: ''
@@ -20,17 +36,23 @@ const physicalLiteracy3to5Config = {
         '1' : {
             backgroundColor: '#850909',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'thumbs-up',
+            iconColor: 'white'
         },
         '2' : {
             backgroundColor: '#850909',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'thumbs-down',
+            iconColor: 'white'
         },
         '3' : {
             backgroundColor: '#850909',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'hand',
+            iconColor: 'white'
         },
         '4' : {
             backgroundColor: '#850909',
@@ -82,6 +104,11 @@ const physicalLiteracy3to5Config = {
             backgroundColor: '#bf3e13',
             textColor: 'white',
             mediaSrc: ''
+        },
+        '4' : {
+            backgroundColor: '#bf3e13',
+            textColor: 'white',
+            mediaSrc: ''
         }
     },
     'QID1715170240': {
@@ -91,22 +118,37 @@ const physicalLiteracy3to5Config = {
         '1' : {
             backgroundColor: '#077DA2',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-smile-beam',
+            iconColor: 'white'
         },
         '2' : {
             backgroundColor: '#077DA2',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-smile',
+            iconColor: 'white'
         },
         '3' : {
             backgroundColor: '#077DA2',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-meh',
+            iconColor: 'white'
         },
         '4' : {
             backgroundColor: '#077DA2',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-frown',
+            iconColor: 'white'
+        },
+        '5' : {
+            backgroundColor: '#077DA2',
+            textColor: 'white',
+            mediaSrc: '',
+            icon: 'face-tired',
+            iconColor: 'white'
         }
     },
     'QID1715170241': {
@@ -116,22 +158,37 @@ const physicalLiteracy3to5Config = {
         '1' : {
             backgroundColor: '#02393e',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-smile-beam',
+            iconColor: 'white'
         },
         '2' : {
             backgroundColor: '#02393e',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-smile',
+            iconColor: 'white'
         },
         '3' : {
             backgroundColor: '#02393e',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-meh',
+            iconColor: 'white'
         },
         '4' : {
             backgroundColor: '#02393e',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-frown',
+            iconColor: 'white'
+        },
+        '5' : {
+            backgroundColor: '#02393e',
+            textColor: 'white',
+            mediaSrc: '',
+            icon: 'face-tired',
+            iconColor: 'white'
         }
     },
     'QID1715170242': {
@@ -141,22 +198,37 @@ const physicalLiteracy3to5Config = {
         '1' : {
             backgroundColor: '#e0155b',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-smile-beam',
+            iconColor: 'white'
         },
         '2' : {
             backgroundColor: '#e0155b',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-grimace',
+            iconColor: 'white'
         },
         '3' : {
             backgroundColor: '#e0155b',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-flushed',
+            iconColor: 'white'
         },
         '4' : {
             backgroundColor: '#e0155b',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'face-meh',
+            iconColor: 'white'
+        },
+        '5' : {
+            backgroundColor: '#e0155b',
+            textColor: 'white',
+            mediaSrc: '',
+            icon: 'face-rolling-eyes',
+            iconColor: 'white'
         }
     },
     'QID1715170243': {
@@ -166,17 +238,23 @@ const physicalLiteracy3to5Config = {
         '1' : {
             backgroundColor: '#800080',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'thumbs-up',
+            iconColor: 'white'
         },
         '2' : {
             backgroundColor: '#800080',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'thumbs-down',
+            iconColor: 'white'
         },
         '3' : {
             backgroundColor: '#800080',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'hand',
+            iconColor: 'white'
         }
     },
     'QID1715170244': {
@@ -186,12 +264,16 @@ const physicalLiteracy3to5Config = {
         '1' : {
             backgroundColor: '#ea0101',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'thumbs-up',
+            iconColor: 'white'
         },
         '2' : {
             backgroundColor: '#ea0101',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'thumbs-down',
+            iconColor: 'white'
         },
         '3' : {
             backgroundColor: '#ea0101',
@@ -206,17 +288,23 @@ const physicalLiteracy3to5Config = {
         '1' : {
             backgroundColor: '#07492e',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'thumbs-up',
+            iconColor: 'white'
         },
         '2' : {
             backgroundColor: '#07492e',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'thumbs-down',
+            iconColor: 'white'
         },
         '3' : {
             backgroundColor: '#07492e',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            icon: 'hand',
+            iconColor: 'white'
         }
     },
     'QID1715170246': {
