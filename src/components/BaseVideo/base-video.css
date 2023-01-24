@@ -1,0 +1,13 @@
+.base-video {
+ /*
+    width: 100%;
+    height: 100%;
+    text-align: center;
+*/
+/* Updated CSS to center align image and remove bottom padding - LH | Jg  */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;   
+
+}
