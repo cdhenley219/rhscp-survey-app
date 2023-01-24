@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import {faThumbsUp} from '@fortawesome/free-solid-svg-icons';
+import {faThumbsUp, faThumbsDown,faHand,faFaceSmileBeam,faFaceGrimace,faFaceFlushed,faFaceMeh,faFaceRollingEyes,faFaceSmile,faFaceFrown,faFaceTired} from '@fortawesome/free-solid-svg-icons';
 import './index.css';
 import SurveySelectionsPage from './pages/SurveySelections';
 import SurveyPage from './pages/Survey';
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
   }
 ]);
 
-library.add(fab, faThumbsUp);
+library.add(fab, faThumbsUp, faThumbsDown,faHand,faFaceSmileBeam,faFaceGrimace,faFaceFlushed,faFaceMeh,faFaceRollingEyes,faFaceSmile,faFaceFrown,faFaceTired);
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
