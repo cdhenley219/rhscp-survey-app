@@ -4,23 +4,18 @@ const physicalLiteracyKto2Config = {
     'QID1': {
         mediaSrc: '',
         isMediaMC: true,
-        '1' : {
+        '4' : {
             mediaSrc: 'Guardians_and_kids_playing_soccer',
             mediaSrcWidth: '25px',
             mediaSrcHeight: '25px'
         },
-        '2' : {
+        '5' : {
             mediaSrc: 'girl_holding_weights',
             mediaSrcWidth: '25px',
             mediaSrcHeight: '25px'
         },
-        '3' : {
+        '6' : {
             mediaSrc: 'kids_climbing',
-            mediaSrcWidth: '25px',
-            mediaSrcHeight: '25px'
-        },
-        '4' : {
-            mediaSrc: 'kids_pushups',
             mediaSrcWidth: '25px',
             mediaSrcHeight: '25px'
         }
@@ -28,23 +23,20 @@ const physicalLiteracyKto2Config = {
     'QID6': {
         mediaSrc: '',
         isMediaMC: true,
-        '1' : {
+        '4' : {
             mediaSrc: 'kids_playing',
             mediaSrcWidth: '25px',
             mediaSrcHeight: '25px'
         },
-        '2' : {
+        '5' : {
             mediaSrc: 'girl_skipping',
             mediaSrcWidth: '25px',
             mediaSrcHeight: '25px'
         },
-        '3' : {
+        '6' : {
             mediaSrc: 'two_girls_on_computer',
             mediaSrcWidth: '25px',
             mediaSrcHeight: '25px'
-        },
-        '4' : {
-            mediaSrc: ''
         }
     },
     'QID3': {
@@ -113,7 +105,6 @@ const physicalLiteracyKto2Config = {
             mediaSrcWidth: '25px',
             mediaSrcHeight: '25px'
         },
-/*Add a new image */
         '4' : {
             mediaSrc: 'oven_mitt',
             mediaSrcWidth: '25px',
@@ -182,12 +173,12 @@ const physicalLiteracyKto2Config = {
             mediaSrcHeight: '230px'
         },
         '2' : {
-            mediaSrc: 'formal_wear',
+            mediaSrc: '',
             mediaSrcWidth: '350px',
             mediaSrcHeight: '230px'
         },
         '3' : {
-            mediaSrc: '',
+            mediaSrc: 'formal_wear',
             mediaSrcWidth: '25px',
             mediaSrcHeight: '25px'
         }
