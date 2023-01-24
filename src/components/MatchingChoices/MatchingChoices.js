@@ -11,7 +11,7 @@ const MatchingChoices = ({choice}) => {
 
     return (
         <div className="matching-choices" ref={containerEl}>
-            <QuestionText text="What is the question?"/>
+            <QuestionText question={{questionText: 'Test Question Here?'}}/>
             <div className="matching-choices__rule">Please select only one answer</div>
             <div className="matching-choices__content">
                 <div className="matching-choices__content_item">

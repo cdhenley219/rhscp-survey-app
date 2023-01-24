@@ -4,7 +4,7 @@ import SurveyHeading from '../components/SurveyHeading/SurveyHeading';
 import SurveyFooter from '../components/SurveyFooter/SurveyFooter';
 import TextMultipleChoice from '../components/TextMultipleChoice/TextMultipleChoice';
 import FreeTextChoice from '../components/FreeTextChoice/FreeTextChoice';
-//import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
+import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
 import MediaMultipleChoice from '../components/MediaMultipleChoice/MediaMultipleChoice';
 import {getGradeImage, getConfig} from '../util/data';
 import api from '../util/api';
@@ -85,7 +85,8 @@ const Survey = () => {
     return (
         <div className="survey">
             <SurveyHeading gradesImageName={getGradeImage(config.grades)} title={config.title}/>
-            {currentQuestion && getQuestionComponent()} 
+            <MatchingChoices/>
+            {/* {currentQuestion && getQuestionComponent()}  */}
             <SurveyFooter    
                 goNext={goNext}
                 goPrevious={goPrevious}             
