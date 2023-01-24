@@ -48,3 +48,12 @@ color:white;
     color: #666666 !important;
     cursor: not-allowed !important;
 }
+
+/* added style to icons | jg */
+.answer-text .svg-inline--fa {  
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius:50px;
+  padding:5px;
+  vertical-align: -0.4em;
+}
