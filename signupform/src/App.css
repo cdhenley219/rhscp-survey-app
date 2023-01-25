@@ -8,6 +8,17 @@
   padding-bottom:20px;
   margin-top: 20px;
   }
+
+  .formHeader{
+    background-color: #85ab15;
+  }
+
+  .formHeader h1{
+    background-color: #85ab15; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;   
+  }
   
   .label{
   display: block;

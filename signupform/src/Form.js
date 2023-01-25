@@ -89,7 +89,7 @@ display: error ? '' : 'none',
 return (
 <div className="form">
 <div>
-<h1>User Registration</h1>
+<div className='formHeader'><h1>User Registration</h1></div>
 </div>
 
 {/* Calling to the methods */}
