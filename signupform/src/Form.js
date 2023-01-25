@@ -114,7 +114,7 @@ value={grade} type="text" />
 
 <label className="label">Date of Birth</label>
 <input onChange={handleBirthDate} className="input"
-value={birthdate} type="text" />
+value={birthdate} type="date" />
 
 <label className="label">Email</label>
 <input onChange={handleEmail} className="input"
