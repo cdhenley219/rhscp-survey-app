@@ -1,18 +1,12 @@
-const URL_PREFIX = `https://ca1.qualtrics.com/API/v3`;
+const URL_PREFIX = `https://ca1.qualtrics.com`;
 const headers = {
     'x-api-token': 'Q03b2dgJqGoYol41YclNsgOf64OdSgMoysRxOIm7',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
+    'Content-Type': 'application/json'
 }; 
-
-const getAuth = async() => {
-    const response = await fetch('https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/forms&client_id=528312503789-t8mt8v91ngvjsi67tm1ltlpu3ka4kdg0.apps.googleusercontent.com&redirect_uri=http://localhost:3000&response_type=token');
-    return await response.json();
-};
 
 const getSurvey = async (surveyId) => {
     try {
-        const response = await fetch(`${URL_PREFIX}/surveys/${surveyId}`, {
+        const response = await fetch(`${URL_PREFIX}/API/v3/surveys/${surveyId}`, {
             headers
         });
         return await response.json();
@@ -23,11 +17,16 @@ const getSurvey = async (surveyId) => {
 };
 
 const startSurveySession = async (surveyId) => {
-    // TODO: pass language, embeddedData, recipientId, and distributedId
+    const body = JSON.stringify({
+        language: 'EN',
+        embeddedData:{}
+    });
+    
     try {
-        const response = await fetch(`${URL_PREFIX}/surveys/${surveyId}/sessions`, {
+        const response = await fetch(`${URL_PREFIX}/API/v3/surveys/${surveyId}/sessions`, {
             method: 'POST',
-            headers
+            headers,
+            body
         });
     
         return await response.json();
@@ -37,12 +36,34 @@ const startSurveySession = async (surveyId) => {
     }
 };
 
-const updateSurveySession = async (surveyId, sessionId) => {
+const updateSurveySession = async (surveyId, sessionId, payload) => {
     // TODO: pass language, embeddedData, recipientId, and distributedId
+
+    const body = JSON.stringify({
+        advance: true,
+        embeddedData: {},
+        //close: true,
+        responses: {
+            "QID1715170247": {
+                "1": {
+                  "selected": true,
+                  text: "Yes"
+                },
+          
+                "2": {
+                  "selected": false,
+                  text: "No"
+                }          
+            },
+            'QID1715170248': 'baseball'
+        }
+    });
+
     try {
-        const response = await fetch(`${URL_PREFIX}/surveys/${surveyId}/sessions/${sessionId}`, {
+        const response = await fetch(`${URL_PREFIX}/API/v3/surveys/${surveyId}/sessions/${sessionId}`, {
             method: 'POST',
-            headers
+            headers,
+            body
         });
     
         return await response.json();
@@ -51,29 +72,11 @@ const updateSurveySession = async (surveyId, sessionId) => {
         console.log(error);
     }
 };
-
-const removeSurveySession = async (surveyId, sessionId) => {
-    // TODO: pass language, embeddedData, recipientId, and distributedId
-    try {
-        const response = await fetch(`${URL_PREFIX}/surveys/${surveyId}/sessions/${sessionId}`, {
-            method: 'DELETE',
-            headers
-        });
-    
-        return await response.json();
-    }
-    catch (error) {
-        console.log(error);
-    }
-};
-
 
 const api = {
-    getAuth,
     getSurvey,
     startSurveySession,
-    updateSurveySession,
-    removeSurveySession
+    updateSurveySession
 };
 
 export default api;
