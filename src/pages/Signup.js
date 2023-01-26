@@ -90,10 +90,10 @@ display: error ? '' : 'none',
 
 
 return (
-<div className="form">
+<div className="signupform">
 <div>
 
-<div className='formHeader'>
+<div className='signupformHeader'>
 <Logo />
 <h1>Online Assessments</h1>
 <h2>Sign Up</h2></div>

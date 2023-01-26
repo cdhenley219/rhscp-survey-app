@@ -2,10 +2,10 @@
 /* -------------------------------------------- */
 
 /* ----Signup  Form -----*/
-.form {
+.signupform {
   text-align: center;
   background-color:none;
-  width: 50%; 
+  width: 40%; 
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
@@ -13,21 +13,21 @@
   margin-top: 20px;
   border:10px solid #bf3e13;
   }
-  .formHeader img {        
+  .signupformHeader img {        
     width: 100px !important;         
   }
 
-  .formHeader{
+  .signupformHeader{
     background-color: white;
     margin-top: 20px;
     margin-bottom: 50px;
   }
 
-  .formHeader h1{    
+  .signupformHeader h1{    
     color: #85ab15;   
   }
 
-  .formHeader h2{    
+  .signupformHeader h2{    
     color: #85ab15;
     line-height: 0em;
     font-weight: 700;   
@@ -126,27 +126,40 @@
 
   /* Mobile Responsive for Signup form */
   @media only screen and (max-width: 800px) {
-    .formHeader img {        
-      width: 70px !important;     
+    .signupform {
+      width:60%;
+     }
+    .signupformHeader img {        
+      width: 40% !important;     
     }
-    .input {
+    .signupform.input {
       font-size: medium;      
+    } 
+    .signupformHeader h1 {      
+    font-size: large;
+    }
+    .signupformHeader h2 {      
+    font-size: large;      
+    } 
+    
   }
-  
-  }
+    
   @media only screen and (max-width: 500px) {
-    .formHeader h1 {      
-      font-size: medium;
+    .signupform {
+      width:50%;
+     }
+    .signupformHeader h1 {      
+      font-size: large;
   }
-    .formHeader h2 {      
-      font-size: medium;
+    .signupformHeader h2 {      
+      font-size: large;      
+  }  
+     .signupform.input {
+      font-size: x-small;      
   }
-    .input {
-      font-size: small;      
-  }
-  
-  }
+}
 
+/* --end --*/
 
 /* Mobile Responsive for Login Form */
 @media only screen and (max-width: 800px) {
@@ -171,7 +184,7 @@
    .loginformHeader h2 {      
      font-size: medium;
  }
- .loginform .input {
+   .loginform .input {
      font-size: x-small;      
  }
  
