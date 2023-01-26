@@ -1,43 +1,15 @@
 import { useState } from 'react';
-import './Signup.css'; //CSS code for Signup and login form
+import './Signup.css';
 import Logo from '../components/Logo/Logo';
-export default function Signup() {
+export default function Login() {
 
 // States for registration
-const [fname, setFirstName] = useState('');
-const [lname, setLastName] = useState('');
-const [grade, setGrade] = useState('');
-const [birthdate, setBirthDate] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
 
 // States for checking the errors
 const [submitted, setSubmitted] = useState(false);
 const [error, setError] = useState(false);
-
-// Handling the First Name change
-const handleFirstName = (e) => {
-setFirstName(e.target.value);
-setSubmitted(false);
-};
-
-// Handling the Last Name change
-const handleLastName = (e) => {
-setLastName(e.target.value);
-setSubmitted(false);
-};
-
-// Handling the Grade change
-const handleGrade = (e) => {
-setGrade(e.target.value);
-setSubmitted(false);
-};
-
-// Handling the Birthdate change
-const handleBirthDate = (e) => {
-setBirthDate(e.target.value);
-setSubmitted(false);
-};
 
 // Handling the email change
 const handleEmail = (e) => {
@@ -54,7 +26,7 @@ setSubmitted(false);
 // Handling the form submission
 const handleSubmit = (e) => {
 e.preventDefault();
-if (fname === '' || lname === '' || email === '' || password === '') {
+if (email === '' || password === '') {
 setError(true);
 } else {
 setSubmitted(true);
@@ -70,7 +42,7 @@ className="success"
 style={{
 display: submitted ? '' : 'none',
 }}>
-<h2>User {fname} {lname} successfully registered!!</h2>
+<h2>Welcome User {email} !</h2>
 </div>
 );
 };
@@ -90,13 +62,13 @@ display: error ? '' : 'none',
 
 
 return (
-<div className="form">
+<div className="loginform">
 <div>
 
-<div className='formHeader'>
+<div className='loginformHeader'>
 <Logo />
 <h1>Online Assessments</h1>
-<h2>Sign Up</h2></div>
+<h2>Login</h2></div>
 </div>
 
 {/* Calling to the methods */}
@@ -107,21 +79,6 @@ return (
 
 <form>
 {/* Labels and inputs for form data */}
-<label className="label">First Name</label>
-<input onChange={handleFirstName} className="input"
-value={fname} type="text" />
-
-<label className="label">Last Name</label>
-<input onChange={handleLastName} className="input"
-value={lname} type="text" />
-
-<label className="label">Grade</label>
-<input onChange={handleGrade} className="input"
-value={grade} type="text" />
-
-<label className="label">Date of Birth</label>
-<input onChange={handleBirthDate} className="input"
-value={birthdate} type="date" />
 
 <label className="label">Email</label>
 <input onChange={handleEmail} className="input"
@@ -132,7 +89,7 @@ value={email} type="email" />
 value={password} type="password" />
 
 <button onClick={handleSubmit} className="btn" type="submit">
-Submit
+Login
 </button>
 </form>
 </div>

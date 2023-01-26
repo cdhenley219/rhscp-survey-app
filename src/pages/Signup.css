@@ -1,3 +1,7 @@
+/* Styles for both Signup form and Login form. */
+/* -------------------------------------------- */
+
+/* ----Signup  Form -----*/
 .form {
   text-align: center;
   background-color:none;
@@ -28,7 +32,42 @@
     line-height: 0em;
     font-weight: 700;   
   }
+  /* end signup form */
+
+  /* ----- Login Form-----  */
+  .loginform {
+    text-align: center;
+    background-color:none;
+    width: 30%; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding-bottom:20px;
+    margin-top: 20px;
+    border:10px solid #bf3e13;
+    }
+    .loginformHeader img {        
+      width: 50% !important;         
+    }
   
+    .loginformHeader{
+      background-color: white;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+  
+    .loginformHeader h1{    
+      color: #85ab15;   
+    }
+  
+    .loginformHeader h2{    
+      color: #85ab15;
+      line-height: 0em;
+      font-weight: 700;   
+    }
+  /* end login form */
+    
+
   .label{
   display: block;
   font-size: larger;
@@ -85,6 +124,7 @@
   padding: 10px;
   }
 
+  /* Mobile Responsive for Signup form */
   @media only screen and (max-width: 800px) {
     .formHeader img {        
       width: 70px !important;     
@@ -106,5 +146,35 @@
   }
   
   }
+
+
+/* Mobile Responsive for Login Form */
+@media only screen and (max-width: 800px) {
+  .loginform {
+   width:50%;
+  }
+   .loginformHeader img {        
+     width: 50% !important;     
+   }
+   .loginform .input {
+     font-size: medium;      
+ }
+ 
+ }
+ @media only screen and (max-width: 500px) {
+   .loginform {
+     width:50%;
+    }
+   .loginformHeader h1 {      
+     font-size: medium;
+ }
+   .loginformHeader h2 {      
+     font-size: medium;
+ }
+ .loginform .input {
+     font-size: x-small;      
+ }
+ 
+ }
 
 
