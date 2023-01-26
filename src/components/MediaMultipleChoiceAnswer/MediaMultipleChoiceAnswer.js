@@ -1,4 +1,5 @@
 import BaseImage from "../BaseImage/BaseImage"; 
+import BaseVideo from '../BaseVideo/BaseVideo';
 import './media-multiple-choice-answer.css';
 const MediaMultipleChoiceAnswer = ({ choice, config, text, mediaSrc='', selected=false, multipleAnswersAccepted=false, onSelect=()=>{}, ...rest }) => {
     const handleChange = e => {

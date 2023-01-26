@@ -365,7 +365,7 @@ const physicalLiteracyKto2Data = {
             label: '',
             type: 'MC',
             text: 'What is the best drink to have when playing outside?',
-            isMediaMC: physicalLiteracyKto2Config['QID13].isMediaMC,
+            isMediaMC: physicalLiteracyKto2Config['QID13'].isMediaMC,
             mediaSrc: physicalLiteracyKto2Config['QID13'].mediaSrc,
             mediaSrcWidth: physicalLiteracyKto2Config['QID13'].mediaSrcWidth,
             mediaSrcHeight: physicalLiteracyKto2Config['QID13'].mediaSrcHeight
