@@ -24,10 +24,16 @@ const getSurvey = async (surveyId) => {
 
 const startSurveySession = async (surveyId) => {
     // TODO: pass language, embeddedData, recipientId, and distributedId
+    const body = {
+        language: 'EN',
+        embeddedData: {}
+    };
+
     try {
         const response = await fetch(`${URL_PREFIX}/surveys/${surveyId}/sessions`, {
             method: 'POST',
-            headers
+            headers,
+            body
         });
     
         return await response.json();

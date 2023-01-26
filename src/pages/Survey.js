@@ -15,6 +15,7 @@ const Survey = () => {
     const [selectedAnswer, setSelectedAnswer] = useState([]); 
     const [surveyQuestionIndex, setSurveyQuestionIndex] = useState(0);
     const [data, setData] = useState(null);
+    const [sessionId, setSessionId] = useState(null);
     const config = getConfig(surveyId);
     
     const questionIdsList = (data && data.result) ? Object.keys(data.result.questions) : [];
@@ -22,7 +23,6 @@ const Survey = () => {
     const currentQuestion = (data && data.result) ? data.result.questions[questionIdsList[surveyQuestionIndex]] : null;
     const currentConfig = config[questionIdsList[surveyQuestionIndex]];
 
-    console.log(data);
     const selectAnswer = (answerId, answerSelected, multipleAnswersAccepted) => {
         const choiceKeys = Object.keys(currentQuestion.choices);
         if (answerSelected) {
@@ -79,7 +79,15 @@ const Survey = () => {
             const resp = await api.getSurvey(surveyId);
             setData(resp);
         };
+
+        const getSession = async () => {
+            const resp = await api.startSurveySession(surveyId);
+            setSessionId(resp.result.sessionId);
+            console.log(sessionId);
+        };
+
         getSurveyData();
+        getSession();
     }, []);
 
     /*useEffect(() => {
