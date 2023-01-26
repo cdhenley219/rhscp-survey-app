@@ -1,0 +1,110 @@
+.form {
+  text-align: center;
+  background-color:none;
+  width: 50%; 
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding-bottom:20px;
+  margin-top: 20px;
+  border:10px solid #bf3e13;
+  }
+  .formHeader img {        
+    width: 100px !important;         
+  }
+
+  .formHeader{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .formHeader h1{    
+    color: #85ab15;   
+  }
+
+  .formHeader h2{    
+    color: #85ab15;
+    line-height: 0em;
+    font-weight: 700;   
+  }
+  
+  .label{
+  display: block;
+  font-size: larger;
+  color: black;
+  padding: 5px;
+  }
+  
+  .input{
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+  
+  }
+  .btn{
+  color: white;
+  background-color: #bf3e13;
+  border-radius: 5px;
+  font-size: larger;
+  display: block;
+  padding: 5px;
+  margin: 10px auto;
+  }
+
+  .btn:hover {
+    background-color: #5bbfeb;
+    color:black; 
+  }
+  .btn:focus {
+    outline: 1px dashed darkblue;
+    background-color: #1478A3;
+    color:white;
+  }
+  
+  .messages{
+  display: flex;
+  justify-content: center;
+  }
+  
+  .error{
+  display: block;
+  background-color: red;
+  color: white;
+  width: fit-content;
+  height: 50px;
+  padding: 1px 10px 30px 10px;
+  }
+  
+  .success{
+  display: block;
+  background-color: #5bbfeb;
+  color: black;
+  width: fit-content;
+  height: 100px;
+  padding: 10px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .formHeader img {        
+      width: 70px !important;     
+    }
+    .input {
+      font-size: medium;      
+  }
+  
+  }
+  @media only screen and (max-width: 500px) {
+    .formHeader h1 {      
+      font-size: medium;
+  }
+    .formHeader h2 {      
+      font-size: medium;
+  }
+    .input {
+      font-size: small;      
+  }
+  
+  }
+
+
