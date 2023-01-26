@@ -40,6 +40,7 @@ const Survey = () => {
     const goNext = () => {
         setSurveyQuestionIndex(surveyQuestionIndex+1);
         setSelectedAnswer([]);
+        api.updateSurveySession(surveyId, sessionId);
     };
 
     const goPrevious = () => {
@@ -83,22 +84,19 @@ const Survey = () => {
         const getSession = async () => {
             const resp = await api.startSurveySession(surveyId);
             setSessionId(resp.result.sessionId);
-            console.log(sessionId);
+            console.log(resp.result.sessionId);
         };
 
         getSurveyData();
         getSession();
-    }, []);
+    }, [surveyId]);
 
-    /*useEffect(() => {
-        const question = (data && data.result) ? data.result.questions[questionIdsList[surveyQuestionIndex]] : null;
 
-    }, [surveyQuestionIndex]);*/
 
     return (
         <div className="survey">
             <SurveyHeading gradesImageName={getGradeImage(config.grades)} title={config.title}/>
-            {currentQuestion && getQuestionComponent() } 
+            {currentQuestion && getQuestionComponent()} 
             <SurveyFooter    
                 goNext={goNext}
                 goPrevious={goPrevious}             

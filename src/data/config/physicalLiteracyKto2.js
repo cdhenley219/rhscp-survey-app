@@ -1,145 +1,235 @@
 const physicalLiteracyKto2Config = {
-    title: 'Physical Literacy Assessment',
+    surveyId: '1',
     grades: 'K-2',
     'QID1': {
         mediaSrc: '',
         isMediaMC: true,
-        '1' : {
-            mediaSrc: 'Logo'
-        },
-        '2' : {
-            mediaSrc: 'Logo'
-        },
-        '3' : {
-            mediaSrc: 'Logo'
-        },
         '4' : {
-            mediaSrc: 'Logo'
+            mediaSrc: 'Guardians_and_kids_playing_soccer',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
+        },
+        '5' : {
+            mediaSrc: 'girl_holding_weights',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
+        },
+        '6' : {
+            mediaSrc: 'kids_climbing',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         }
     },
     'QID6': {
         mediaSrc: '',
         isMediaMC: true,
-        '1' : {
-            mediaSrc: ''
-        },
-        '2' : {
-            mediaSrc: ''
-        },
-        '3' : {
-            mediaSrc: ''
-        },
         '4' : {
-            mediaSrc: ''
+            mediaSrc: 'kids_playing',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
+        },
+        '5' : {
+            mediaSrc: 'girl_skipping',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
+        },
+        '6' : {
+            mediaSrc: 'two_girls_on_computer',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         }
     },
     'QID3': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
-            mediaSrc: ''
+            mediaSrc: 'basketball',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         },
         '2' : {
-            mediaSrc: ''
-        },
+            mediaSrc: 'baseball',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
+        },  
         '3' : {
-            mediaSrc: ''
+            mediaSrc: 'soccerball',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
+        },
+        '4' : {
+            mediaSrc: 'baseball_bat',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         }
     },
     'QID5': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
-            mediaSrc: ''
+            mediaSrc: 'bicycle',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         },
         '2' : {
-            mediaSrc: ''
-        },
+            mediaSrc: 'basketball',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
+        },  
         '3' : {
-            mediaSrc: ''
+            mediaSrc: 'girl_holding_weights',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
+        },
+        '4' : {
+            mediaSrc: 'Kids_building_electronics',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         }
     },
     'QID7': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
-            mediaSrc: ''
+            mediaSrc: 'woman_eyes',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         },
         '2' : {
-            mediaSrc: ''
+            mediaSrc: 'smile_teeth',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         },
         '3' : {
-            mediaSrc: ''
+            mediaSrc: 'heart',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
+        },
+        '4' : {
+            mediaSrc: 'oven_mitt',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         }
     },
     'QID8': {
-        mediaSrc: '',
+        mediaSrc: 'kids_playing_basketball',
+        isMediaMC: true,
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
-            mediaSrc: ''
+            mediaSrc: 'basketball',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px',
         },
         '2' : {
-            mediaSrc: ''
+            mediaSrc: 'baseball',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px',
         },
         '3' : {
-            mediaSrc: ''
+            mediaSrc: 'football',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px',
         },
         '4' : {
-            mediaSrc: ''
+            mediaSrc: 'soccerball',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px',
         }
     },
     'QID9': {
-        mediaSrc: '',
+        mediaSrc: 'kids_pushups',
+        isMediaMC: true,
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
+        
         '1' : {
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px',
         },
         '2' : {
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         },
         '3' : {
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
+        },
+        '4' : {
+            mediaSrc: '',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         }
     },
     'QID11': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
-            mediaSrc: ''
+            mediaSrc: 'casual_clothes',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px'
         },
         '2' : {
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px'
         },
         '3' : {
-            mediaSrc: ''
+            mediaSrc: 'formal_wear',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         }
     },
     'QID14': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
-            mediaSrc: ''
+            mediaSrc: 'construction_site',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px'
         },
         '2' : {
-            mediaSrc: ''
+            mediaSrc: 'Open_field',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px'
         },
         '3' : {
-            mediaSrc: ''
+            mediaSrc: 'big_city',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px'
         }
     },
     'QID13': {
         mediaSrc: '',
         isMediaMC: true,
         '1' : {
-            mediaSrc: ''
+            mediaSrc: 'soda',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         },
         '2' : {
-            mediaSrc: ''
+            mediaSrc: 'juice',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px'
         },
         '3' : {
-            mediaSrc: ''
+            mediaSrc: 'water',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px',
+        },
+        '4' : {
+            mediaSrc: 'water',
+            mediaSrcWidth: '25px',
+            mediaSrcHeight: '25px',
         }
     },
     '11': {
-        mediaSrc: ''
+        mediaSrc: 'girl_running_with_football',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
     },
     '11.1': {
         mediaSrc: ''
@@ -148,7 +238,10 @@ const physicalLiteracyKto2Config = {
         mediaSrc: ''
     },
     '12': {
-        mediaSrc: '',
+        mediaSrc: 'Guardians_and_kids_playing_soccer',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
+        
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -171,7 +264,10 @@ const physicalLiteracyKto2Config = {
         }
     },
     '13': {
-        mediaSrc: '',
+        mediaSrc: 'physical-activity',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
+        
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
@@ -194,11 +290,15 @@ const physicalLiteracyKto2Config = {
         }
     },
     '14': {
-        mediaSrc: '',
+        mediaSrc: 'kids_climbing',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px',
         },
         '2' : {
             backgroundColor: 'blue',
@@ -212,11 +312,15 @@ const physicalLiteracyKto2Config = {
         }
     },
     '15': {
-        mediaSrc: '',
+        mediaSrc: 'kids_stretching',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px',
         },
         '2' : {
             backgroundColor: 'blue',
@@ -235,11 +339,15 @@ const physicalLiteracyKto2Config = {
         }
     },
     '16': {
-        mediaSrc: '',
+        mediaSrc: 'kids_pushups',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px',
         },
         '2' : {
             backgroundColor: 'blue',
@@ -258,11 +366,15 @@ const physicalLiteracyKto2Config = {
         }
     },
     '17': {
-        mediaSrc: '',
+        mediaSrc: 'Girl_throwing_ball_at_target',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px',
         },
         '2' : {
             backgroundColor: 'blue',
@@ -281,11 +393,15 @@ const physicalLiteracyKto2Config = {
         }
     },
     '18': {
-        mediaSrc: '',
+        mediaSrc: 'kids_playing_soccer',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px',
         },
         '2' : {
             backgroundColor: 'blue',
@@ -299,11 +415,15 @@ const physicalLiteracyKto2Config = {
         }
     },
     '19': {
-        mediaSrc: '',
+        mediaSrc: 'kids_playing_with_soccer_ball',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px',
         },
         '2' : {
             backgroundColor: 'blue',
@@ -317,11 +437,15 @@ const physicalLiteracyKto2Config = {
         }
     },
     '20': {
-        mediaSrc: '',
+        mediaSrc: 'girl_and_chalk_weights',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px',
         },
         '2' : {
             backgroundColor: 'blue',
@@ -335,11 +459,15 @@ const physicalLiteracyKto2Config = {
         }
     },
     '21': {
-        mediaSrc: '',
+        mediaSrc: 'four_different_sports',
+        mediaSrcWidth: '350px',
+        mediaSrcHeight: '230px',
         '1' : {
             backgroundColor: 'blue',
             textColor: 'white',
-            mediaSrc: ''
+            mediaSrc: '',
+            mediaSrcWidth: '350px',
+            mediaSrcHeight: '230px',
         },
         '2' : {
             backgroundColor: 'blue',
