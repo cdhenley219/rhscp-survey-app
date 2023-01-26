@@ -94,7 +94,10 @@ return (
 <div className="form">
 <div>
 
-<div className='formHeader'><Logo /><h1>Online Assessments</h1><h2>Sign Up</h2></div>
+<div className='formHeader'>
+<Logo />
+<h1>Online Assessments</h1>
+<h2>Sign Up</h2></div>
 </div>
 
 {/* Calling to the methods */}
