@@ -1,29 +1,32 @@
 .form {
   text-align: center;
-  background-color:#1690b5;
+  background-color:none;
   width: 50%; 
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
   padding-bottom:20px;
   margin-top: 20px;
+  border:10px solid #bf3e13;
+  }
+  .formHeader img {        
+    width: 100px !important;     
   }
 
   .formHeader{
-    background-color: #85ab15;
+    background-color: white;
+    margin-top: 20px;
   }
 
   .formHeader h1{
-    background-color: #85ab15; 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    color: white;   
+    background-color: white; 
+    color: #85ab15;   
   }
   
   .label{
   display: block;
   font-size: larger;
-  color: white;
+  color: black;
   padding: 5px;
   }
   
@@ -35,12 +38,22 @@
   }
   .btn{
   color: white;
-  background-color: #85ab15;
+  background-color: #bf3e13;
   border-radius: 5px;
   font-size: larger;
   display: block;
   padding: 5px;
   margin: 10px auto;
+  }
+
+  .btn:hover {
+    background-color: #5bbfeb;
+    color:black; 
+  }
+  .btn:focus {
+    outline: 1px dashed darkblue;
+    background-color: #1478A3;
+    color:white;
   }
   
   .messages{
@@ -59,9 +72,16 @@
   
   .success{
   display: block;
-  background-color: lightblue;
+  background-color: #5bbfeb;
   color: black;
   width: fit-content;
   height: 100px;
   padding: 10px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .formHeader img {        
+      width: 70px !important;     
+    }
+  
   }

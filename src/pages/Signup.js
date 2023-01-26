@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Signup.css';
+import '../components/Logo/logo.css'
 import Logo from '../components/Logo/Logo';
 export default function Signup() {
 
@@ -88,11 +89,12 @@ display: error ? '' : 'none',
 );
 };
 
+
 return (
 <div className="form">
 <div>
-<Logo/>
-<div className='formHeader'><h1>User Registration</h1></div>
+
+<div className='formHeader'><Logo /><h1>User Registration</h1></div>
 </div>
 
 {/* Calling to the methods */}
