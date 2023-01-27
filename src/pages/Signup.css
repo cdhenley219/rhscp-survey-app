@@ -146,7 +146,7 @@
     
   @media only screen and (max-width: 500px) {
     .signupform {
-      width:50%;
+      width:60%;
      }
     .signupformHeader h1 {      
       font-size: large;
@@ -154,8 +154,8 @@
     .signupformHeader h2 {      
       font-size: large;      
   }  
-     .signupform.input {
-      font-size: x-small;      
+     .signupform .input {
+      font-size: small;      
   }
 }
 
