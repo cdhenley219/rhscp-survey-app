@@ -20,8 +20,8 @@ const startSurveySession = async (surveyId) => {
     const body = JSON.stringify({
         language: 'EN',
         embeddedData:{}
-    });
-    
+    });    
+
     try {
         const response = await fetch(`${URL_PREFIX}/API/v3/surveys/${surveyId}/sessions`, {
             method: 'POST',
