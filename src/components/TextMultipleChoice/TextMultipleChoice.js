@@ -4,28 +4,26 @@ import QuestionText from '../QuestionText/QuestionText';
 import AnswerText from '../AnswerText/AnswerText';
 import './text-multiple-choice.css';
 
-const MultipleChoice = ({id, name, question, config={}, selectedAnswers, onSelect=()=>{}, multipleAnswersAccepted=false}) => {
-    const findSelectedAnswer = id => selectedAnswers.find(answer => answer === id);
+const TextMultipleChoice = ({question, response={}, config, onSelect, /*selectedAnswers, onSelect=()=>{},*/ multipleAnswersAccepted=false}) => {
     const containerEl = useRef(null);
-    const choiceKeys = Object.keys(question.choices);
-    useSlide('left', containerEl, id);
-    
+    useSlide('left', containerEl, question.questionId);
+
     return (
         <div className="survey-multiple-choice" ref={containerEl}>
             <QuestionText question={question} config={config}/>
         
             <div>
                 {
-                    choiceKeys.map(choiceId => (
+                    question.choices.map(choice => (
                         <AnswerText 
-                            key={choiceId} 
-                            id={choiceId} 
-                            choice={question.choices[choiceId]}
-                            config={config[choiceId]}
-                            name={name}
+                            key={choice.choiceId} 
+                            id={choice.choiceId} 
+                            question={question}
+                            choice={choice}
+                            config={config[choice.choiceId]}
                             multipleAnswersAccepted={multipleAnswersAccepted}
-                            selected={Array.isArray(selectedAnswers) ? findSelectedAnswer(choiceId) : selectedAnswers.id === choiceId}
                             onSelect={onSelect}
+                            selected={response[choice.choiceId] && response[choice.choiceId].selected === true}
                         />
                     ))
                 }
@@ -34,4 +32,4 @@ const MultipleChoice = ({id, name, question, config={}, selectedAnswers, onSelec
     );
 };
 
-export default MultipleChoice;
+export default TextMultipleChoice;

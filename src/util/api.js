@@ -4,24 +4,11 @@ const headers = {
     'Content-Type': 'application/json'
 }; 
 
-const getSurvey = async (surveyId) => {
-    try {
-        const response = await fetch(`${URL_PREFIX}/API/v3/surveys/${surveyId}`, {
-            headers
-        });
-        return await response.json();
-    }
-    catch (error) {
-        console.log(error);
-    }
-};
-
 const startSurveySession = async (surveyId) => {
     const body = JSON.stringify({
-        language: 'EN',
-        embeddedData:{}
-    });
-    
+        language: 'EN'
+    });    
+
     try {
         const response = await fetch(`${URL_PREFIX}/API/v3/surveys/${surveyId}/sessions`, {
             method: 'POST',
@@ -36,36 +23,25 @@ const startSurveySession = async (surveyId) => {
     }
 };
 
-const updateSurveySession = async (surveyId, sessionId, payload) => {
-    // TODO: pass language, embeddedData, recipientId, and distributedId
+const updateSurveySession = async (surveyId, sessionId, responses, close=false) => {
+    const body = {};
 
-    const body = JSON.stringify({
-        advance: true,
-        embeddedData: {},
-        //close: true,
-        responses: {
-            "QID1715170247": {
-                "1": {
-                  "selected": true,
-                  text: "Yes"
-                },
-          
-                "2": {
-                  "selected": false,
-                  text: "No"
-                }          
-            },
-            'QID1715170248': 'baseball'
-        }
-    });
+    if (close === true) {
+        body.close = true;
+    }
+    else {
+        body.advance = true;
+    }
+    body.responses = responses;
+
+    const payload = JSON.stringify(body);
 
     try {
         const response = await fetch(`${URL_PREFIX}/API/v3/surveys/${surveyId}/sessions/${sessionId}`, {
             method: 'POST',
             headers,
-            body
+            body: payload
         });
-    
         return await response.json();
     }
     catch (error) {
@@ -73,10 +49,6 @@ const updateSurveySession = async (surveyId, sessionId, payload) => {
     }
 };
 
-const api = {
-    getSurvey,
-    startSurveySession,
-    updateSurveySession
-};
+const api = { startSurveySession, updateSurveySession };
 
 export default api;
