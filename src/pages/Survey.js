@@ -69,7 +69,7 @@ const Survey = () => {
 
     useEffect(() => {  
         startSession();
-    }, [surveyId]);
+    }, [surveyId, startSession]);
 
     return (
         <div className="survey">
