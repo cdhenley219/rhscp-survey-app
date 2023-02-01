@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import SurveyHeading from '../components/SurveyHeading/SurveyHeading';
 import SurveyFooter from '../components/SurveyFooter/SurveyFooter';
 import QuestionsBlock from '../components/QuestionsBlock/QuestionsBlock';
+import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
 import {getGradeImage, getConfig} from '../util/data';
 import api from '../util/api';
 import './pages.css';
@@ -77,12 +78,14 @@ const Survey = () => {
                 gradesImageName={getGradeImage(config.grades)} 
                 title={config.title}/>
 
-            <QuestionsBlock 
+            <MatchingChoices/>
+            {/* <QuestionsBlock 
                 questions={questions} 
                 config={config} 
                 responses={responses} 
-                onAnswerSelect={selectAnswer} />
+                onAnswerSelect={selectAnswer} /> */}
                 
+
             <SurveyFooter    
                 goNext={goNext}
                 goPrevious={goPrevious}
