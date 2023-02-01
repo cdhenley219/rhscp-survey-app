@@ -4,13 +4,19 @@ const SurveyFooter = ({ previousButtonShown=false,
                         nextButtonShown=false, 
                         nextButtonDisabled=false,
                         finishButtonShown=false,
-                        goNext=()=>{}, goPrevious=()=>{}
+                        goNext=()=>{}, goPrevious=()=>{}, goFinish=()=>{}
                     }) => {
-    return (
+        
+        const handleFinish = () => {
+            goFinish();
+            window.location.href = '/';
+        };
+
+        return (
         <div className="survey-footer">
             {previousButtonShown && <button className="go-button" onClick={goPrevious}>Previous</button>}
             {nextButtonShown && <button className="go-button" disabled={nextButtonDisabled} onClick={goNext}>Next</button>}
-            {finishButtonShown && <a href="/" className="finish-button">Finish</a>}
+            {finishButtonShown && <button className="finish-button" onClick={handleFinish}>Finish</button>}
         </div>
     );
 };
