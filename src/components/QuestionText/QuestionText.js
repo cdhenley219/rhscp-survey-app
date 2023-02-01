@@ -4,7 +4,7 @@ import './question.css';
 
 const QuestionText = ({question, config={}}) => {
    return ( <>
-      <h2 className="survey-question">{question.questionText}</h2>
+      <h2 className="survey-question">{question.display}</h2>
       <div className="survey-image"> {config.mediaSrc && <BaseImage name={config.mediaSrc} width={config.mediaSrcWidth} height={config.mediaSrcHeight}/>}</div>
       <div className="survey-image"> {config.mediaSrc1 && <BaseVideo name={config.mediaSrc1} width={config.mediaSrcWidth} height={config.mediaSrcHeight}/>}</div>
     </>)
