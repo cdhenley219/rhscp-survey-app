@@ -3,13 +3,13 @@ import useSlide from '../../hooks/useSlide';
 import QuestionText from '../QuestionText/QuestionText';
 import './free-text-choice.css';
 
-const FreeTextChoice = ({id, question, config={}, value, onAnswerChange=()=>{}}) => {
+const FreeTextChoice = ({ question, config, response='', onAnswerChange=()=>{}}) => {
     const containerEl = useRef(null);
-    useSlide('left', containerEl, id);
+    useSlide('left', containerEl, question.questionId);
 
     return (<div className="survey-free-text-choice" ref={containerEl}>
             <QuestionText question={question} config={config}/>
-            <input id={id} type="text" value={value} onChange={onAnswerChange}/>
+            <input id={question.questionId} type="text" value={response} onChange={e => onAnswerChange(question.questionId, question.type, e.target.value)} />
         </div>)
 };
 

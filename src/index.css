@@ -14,13 +14,14 @@ body {
   margin: 20px;
 }
 
+/* converted px to em to make it responsive*/
 h1 {
-  font-size: 36px;
+  font-size: 2.25em;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 1.750em;
   font-weight: 500;
 }
 
