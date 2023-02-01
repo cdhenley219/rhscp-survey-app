@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BaseImage from '../BaseImage/BaseImage';
 import BaseVideo from '../BaseVideo/BaseVideo';
