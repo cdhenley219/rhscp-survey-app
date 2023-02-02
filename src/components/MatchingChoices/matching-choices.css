@@ -32,12 +32,10 @@
 .matching-choices__content_item2 { 
     padding: 40px 40px;
     width: 40%;
-    background: whitesmoke;    
-    /*border-bottom-right-radius: 20px; */
-    /* border-top-right-radius: 20px;  */
+    background: whitesmoke; 
     border-radius:20px;    
 	background: #F8F8F8; 
-	border: solid #BDBDBD 1px; 
+	border: solid #BDBDBD 2px; 
     margin-left:1px;
 	box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.5) inset; 
 	-webkit-box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.5) inset; 
