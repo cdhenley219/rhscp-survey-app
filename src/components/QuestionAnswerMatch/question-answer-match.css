@@ -2,4 +2,18 @@
     padding-bottom: 10px;
     display: flex;
     gap: 10px;
+    font-size: 1.25em;
+    flex-direction: column-reverse;    
+}
+
+.question-answer-match select {
+    font-size: 1.125em;
+    color: #666666;
+    padding: 5px;
+    border: 1px solid #87bde7;
+    border-radius: 5px;
+}
+
+.matching-answer__text {
+    font-size: 1.125em;
 }

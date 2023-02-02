@@ -46,7 +46,7 @@ color:white;
     border: 1px solid #999999 !important;
     background-color: #cccccc !important;
     color: #666666 !important;
-    cursor: not-allowed !important;
+    /*cursor: not-allowed !important; */
 }
 
 /* added style to icons | jg */

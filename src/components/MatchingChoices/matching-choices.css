@@ -1,15 +1,44 @@
 .matching-choices {
+    background-color: #bf3e13;
+    border-radius: 20px;
+    
 }
+
 
 .matching-choices__content {
     display: flex;
     justify-content: space-around;
+    background-color: #bf3e13;
+    border: 5px solid #bf3e13;
+    border-radius: 20px;
+    
 }
 
 .matching-choices__content_item { 
-    padding: 10px 0;
+   background-color: transparent;     
 }
+
+.matching-choices__content_item1 { 
+    padding: 10px 20px;
+    width: 60%;
+    background-color: white;
+    border-bottom-left-radius: 20px;    
+   
+}
+
+.matching-choices__content_item2 { 
+    padding: 40px 40px;
+    width: 40%;
+    background: whitesmoke;    
+    border-bottom-right-radius: 20px;  
+      
+}
+
 
 .matching-choices__rule {
     text-align: center;
+    color: white;
+    font-size: 1.750em;
+    font-weight: 600;
+    margin-bottom: 1em; 
 }
