@@ -78,12 +78,12 @@ const Survey = () => {
                 gradesImageName={getGradeImage(config.grades)} 
                 title={config.title}/>
 
-            <MatchingChoices/>
-            {/* <QuestionsBlock 
+            {/* <MatchingChoices/> */}
+            <QuestionsBlock 
                 questions={questions} 
                 config={config} 
                 responses={responses} 
-                onAnswerSelect={selectAnswer} /> */}
+                onAnswerSelect={selectAnswer} />
                 
 
             <SurveyFooter    
