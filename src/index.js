@@ -20,16 +20,20 @@ const router = createBrowserRouter([
     element: <SurveySelectionsPage/>,
   },
   {
-    path: 'survey/:surveyId',
+    path: '/survey/:surveyId',
     element: <SurveyPage/>
   }, 
   {
-    path: '/signup',
+    path: '/registration/:surveyId',
     element: <Signup/>,
   },
   {
     path: '/login',
     element: <Login/>,
+  },
+  {
+    path: '*',
+    element: <SurveySelectionsPage/>
   }
 ]);
 
