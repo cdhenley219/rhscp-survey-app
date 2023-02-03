@@ -10,6 +10,8 @@ import {faThumbsUp, faThumbsDown,faHand,faFaceSmileBeam,faFaceGrimace,faFaceFlus
 import './index.css';
 import SurveySelectionsPage from './pages/SurveySelections';
 import SurveyPage from './pages/Survey';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
   {
     path: 'survey/:surveyId',
     element: <SurveyPage/>
+  }, 
+  {
+    path: '/signup',
+    element: <Signup/>,
+  },
+  {
+    path: '/login',
+    element: <Login/>,
   }
 ]);
 
