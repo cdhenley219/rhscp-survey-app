@@ -17,9 +17,9 @@ const Survey = () => {
     const [surveyDone, setSurveyDone] = useState(false);
     const responseKeys = Object.keys(responses);
 
-    const startSession = async () => {
+    const startSession = async (uid) => {
         if (!sessionId) {
-            const getResponse =  await api.startSurveySession(surveyId);
+            const getResponse =  await api.startSurveySession(surveyId, uid);
             setSessionId(getResponse.result.sessionId);
     
             const updateResponse = await api.updateSurveySession(surveyId, getResponse.result.sessionId, {});
@@ -69,7 +69,14 @@ const Survey = () => {
     };
 
     useEffect(() => {  
-        startSession();
+        if (localStorage.getItem('survUid')) {
+            startSession(localStorage.getItem('survUid'));
+            localStorage.removeItem('survUid');
+        }
+        else {
+            window.location.href = '/';
+        }
+        
     }, [surveyId]);
 
     return (
