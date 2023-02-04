@@ -95,8 +95,8 @@ return (
 
 <div className='signupformHeader'>
 <Logo />
-<h1>Online Assessments</h1>
-<h2>Sign Up</h2></div>
+<h1>Online Assessments Signup</h1>
+</div>
 </div>
 
 {/* Calling to the methods */}
@@ -107,6 +107,7 @@ return (
 
 <form>
 {/* Labels and inputs for form data */}
+<p>
 <label className="label">First Name</label>
 <input onChange={handleFirstName} className="input"
 value={fname} type="text" />
@@ -130,7 +131,7 @@ value={email} type="email" />
 <label className="label">Password</label>
 <input onChange={handlePassword} className="input"
 value={password} type="password" />
-
+</p>
 <button onClick={handleSubmit} className="btn" type="submit">
 Submit
 </button>

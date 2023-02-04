@@ -3,9 +3,9 @@
 
 /* ----Signup  Form -----*/
 .signupform {
-  text-align: center;
+  text-align: center; 
   background-color:none;
-  width: 40%; 
+  width: 50%; 
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
@@ -14,13 +14,13 @@
   border:10px solid #bf3e13;
   }
   .signupformHeader img {        
-    width: 100px !important;         
+    width: 200px !important;         
   }
 
   .signupformHeader{
     background-color: white;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .signupformHeader h1{    
@@ -28,8 +28,7 @@
   }
 
   .signupformHeader h2{    
-    color: #85ab15;
-    line-height: 0em;
+    color: #85ab15;   
     font-weight: 700;   
   }
   /* end signup form */
@@ -38,7 +37,7 @@
   .loginform {
     text-align: center;
     background-color:none;
-    width: 30%; 
+    width: 50%; 
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -73,32 +72,49 @@
   font-size: larger;
   color: black;
   padding: 5px;
+  font-size:1.70em;
   }
   
-  .input{
-  font-size: larger;
-  padding: 5px;
-  margin: 2px;
-  
+  .input{  
+  padding: 10px;
+  margin: 2px;  
+  width: 70%; 
+  text-align: left; 
+  font-size: 1.25em;
+  outline:1px solid;
   }
+
+  input[type="date" i] {
+    text-align: center; 
+    width:50%;
+}
   .btn{
-  color: white;
-  background-color: #bf3e13;
-  border-radius: 5px;
-  font-size: larger;
-  display: block;
-  padding: 5px;
-  margin: 10px auto;
+    background-color: #0078d0;        
+    border: 0;
+    border-radius: 26px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    padding: 16px 21px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;    
+    -webkit-user-select: none;
+    touch-action: manipulation;
   }
 
   .btn:hover {
     background-color: #5bbfeb;
     color:black; 
   }
+
   .btn:focus {
-    outline: 1px dashed darkblue;
-    background-color: #1478A3;
-    color:white;
+  outline: 1px dashed #5bbfeb;
+  background-color: darkblue;
+  color:white; 
   }
   
   .messages{
@@ -125,68 +141,50 @@
   }
 
   /* Mobile Responsive for Signup form */
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 950px) {
     .signupform {
-      width:60%;
+      width:80%;
      }
     .signupformHeader img {        
-      width: 40% !important;     
-    }
-    .signupform.input {
-      font-size: medium;      
-    } 
-    .signupformHeader h1 {      
-    font-size: large;
-    }
-    .signupformHeader h2 {      
-    font-size: large;      
-    } 
+      width: 30% !important;     
+    }   
+    
     
   }
     
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     .signupform {
-      width:60%;
-     }
-    .signupformHeader h1 {      
-      font-size: large;
-  }
-    .signupformHeader h2 {      
-      font-size: large;      
-  }  
-     .signupform .input {
-      font-size: small;      
-  }
+      width:100%;
+     }   
+  
 }
 
 /* --end --*/
 
 /* Mobile Responsive for Login Form */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   .loginform {
-   width:50%;
-  }
-   .loginformHeader img {        
-     width: 50% !important;     
+    width:80%;
    }
-   .loginform .input {
-     font-size: medium;      
- }
- 
+   .loginformHeader img {        
+     width: 40% !important;     
+   }
+   
  }
  @media only screen and (max-width: 500px) {
    .loginform {
-     width:50%;
+     width:80%;
+    }  
+    .loginformHeader h1{    
+      font-size: 1.60em;  
     }
-   .loginformHeader h1 {      
-     font-size: medium;
- }
-   .loginformHeader h2 {      
-     font-size: medium;
- }
-   .loginform .input {
-     font-size: x-small;      
- }
+    .error h2{
+   font-size:1.50em;
+  }
+  
+  .success h2{
+    font-size:1.5em;    
+   }
  
  }
 
