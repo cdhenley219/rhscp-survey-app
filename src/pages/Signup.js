@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { getConfig } from '../util/data';
 import './Signup.css'; //CSS code for Signup and login form
 import Logo from '../components/Logo/Logo';
 export default function Signup() {
 
+const navigate = useNavigate();
 const grades = ['Kindergarten', '1st', '2nd', '3rd', '4th', '5th', '6th','7th', '8th'];
 const { surveyId } = useParams();
 const config = getConfig(surveyId);
@@ -96,7 +97,9 @@ const handleSubmit = (e) => {
         setError(false);
     }
     localStorage.setItem('survUid', getUniqueId());
-    window.location.href = `/survey/${surveyId}`;
+    debugger;
+    navigate(`/survey/${surveyId}`);
+   // window.location.href = `/survey/${surveyId}`;
 };
 
 // Showing success message

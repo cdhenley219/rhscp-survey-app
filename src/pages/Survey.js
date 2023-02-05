@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import SurveyHeading from '../components/SurveyHeading/SurveyHeading';
 import SurveyFooter from '../components/SurveyFooter/SurveyFooter';
 import QuestionsBlock from '../components/QuestionsBlock/QuestionsBlock';
@@ -9,6 +9,7 @@ import api from '../util/api';
 import './pages.css';
 
 const Survey = () => {
+    const navigate = useNavigate();
     const { surveyId } = useParams();
     const config = getConfig(surveyId);
     const [sessionId, setSessionId] = useState(null);
@@ -74,7 +75,8 @@ const Survey = () => {
             localStorage.removeItem('survUid');
         }
         else {
-            window.location.href = '/';
+            //window.location.href = `registration/${surveyId}`;
+            navigate(`/registration/${surveyId}`);
         }
         
     }, [surveyId]);

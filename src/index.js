@@ -27,10 +27,10 @@ const router = createBrowserRouter([
     path: '/registration/:surveyId',
     element: <Signup/>,
   },
-  {
+  /*{
     path: '/login',
     element: <Login/>,
-  },
+  },*/
   {
     path: '*',
     element: <SurveySelectionsPage/>
