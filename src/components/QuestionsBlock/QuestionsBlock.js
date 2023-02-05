@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import useSlide from '../../hooks/useSlide';
 import TextMultipleChoice from '../TextMultipleChoice/TextMultipleChoice';
 import FreeTextChoice from '../FreeTextChoice/FreeTextChoice';
 //import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
@@ -5,6 +7,9 @@ import MediaMultipleChoice from '../MediaMultipleChoice/MediaMultipleChoice';
 import './survey-questions-block.css';
 
 const QuestionsBlock = ({questions, config, responses, onAnswerSelect}) => {
+    const containerEl = useRef(null);
+    useSlide('left', containerEl, config.surveyId);
+
     const getQuestionComponent = (question, questionConfig) => {
 
         switch(question.type){
@@ -36,7 +41,7 @@ const QuestionsBlock = ({questions, config, responses, onAnswerSelect}) => {
 
 
     return (
-    <div className="survey-questions-block">
+    <div className="survey-questions-block" ref={containerEl}>
         {questions.map(question => (
             getQuestionComponent(question, config[question.questionId])
         ))}
