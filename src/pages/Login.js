@@ -55,7 +55,7 @@ className="error"
 style={{
 display: error ? '' : 'none',
 }}>
-<h1>Please enter all the fields</h1>
+<h2>Please enter all the fields</h2>
 </div>
 );
 };
@@ -67,8 +67,8 @@ return (
 
 <div className='loginformHeader'>
 <Logo />
-<h1>Online Assessments</h1>
-<h2>Login</h2></div>
+<h1>Online Assessments Login</h1>
+</div>
 </div>
 
 {/* Calling to the methods */}
@@ -79,7 +79,7 @@ return (
 
 <form>
 {/* Labels and inputs for form data */}
-
+<p>
 <label className="label">Email</label>
 <input onChange={handleEmail} className="input"
 value={email} type="email" />
@@ -87,7 +87,7 @@ value={email} type="email" />
 <label className="label">Password</label>
 <input onChange={handlePassword} className="input"
 value={password} type="password" />
-
+</p>
 <button onClick={handleSubmit} className="btn" type="submit">
 Login
 </button>
