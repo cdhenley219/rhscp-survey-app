@@ -16,6 +16,6 @@ export const getGradeImage = gradeName => {
     switch(gradeName) {
         case 'K-2': return 'apple';
         case '6-8': return 'board';
-        default: return 'blue_book';
+        default: return 'blue_book_xs';
     }
 };
