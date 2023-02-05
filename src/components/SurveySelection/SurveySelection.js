@@ -11,15 +11,10 @@ const SurveySelection = ({title, imageName, gradeKTo2SurveyId, grade3To5SurveyId
             <div className="survey-selections-item__links">
                 <div className="survey-selections-item__links_title">Select an Assessment</div>
                 <div className="survey-selections-item__links_content">
- feature-matching-choices-template
-                    <GradesImageLink name="apple" url={gradeKTo2SurveyId ? `/survey/${gradeKTo2SurveyId}` : '/'} />
-                    <GradesImageLink name="blue_book" url={grade3To5SurveyId ? `/survey/${grade3To5SurveyId}` : '/'} />
-                    <GradesImageLink name="board" url={grade6To8SurveyId ? `/survey/${grade6To8SurveyId}` : '/'} />
-
                     <GradesImageLink name="apple" url={gradeKTo2SurveyId ? `/registration/${gradeKTo2SurveyId}` : '/'} />
                     <GradesImageLink name="blue_book" url={grade3To5SurveyId ? `/registration/${grade3To5SurveyId}` : '/'} />
                     <GradesImageLink name="board" url={grade6To8SurveyId ? `/registration/${grade6To8SurveyId}` : '/'} />
- develop
+
                 </div>
             </div>
         </div>
