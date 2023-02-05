@@ -6,8 +6,7 @@ const SurveySelections = () => {
       <div className="survey-selections">
         <SurveySelectionsHeading />
         
-        <div className="slide-up">
-          <div className="survey-selections__row">
+        <div className="survey-selections__row">
             <SurveySelection title="Nutrition" imageName="nutrition"/>
             <SurveySelection title="Physical Activity" 
                               imageName="physical-activity" 
@@ -19,9 +18,8 @@ const SurveySelections = () => {
           <div className="survey-selections__row">
             <SurveySelection title="Food Frequency" imageName="child-eating"/>
           </div>
-        </div>
+      </div>
 
-      </div> 
     );
 };
 

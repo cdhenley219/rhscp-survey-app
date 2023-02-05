@@ -1,5 +1,6 @@
 .survey-selection-image {
     position: relative;
+    height: 100%;
   }
 
 .survey-selection-image__title {
