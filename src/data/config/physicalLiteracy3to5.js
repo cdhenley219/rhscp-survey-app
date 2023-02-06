@@ -1,7 +1,8 @@
+import { SURVEY_IDS } from "../constants";
 const physicalLiteracy3to5Config = {
     title: 'Physical Literacy Assessment',
     grades: '3-5',
-    surveyId: '1',
+    surveyId: SURVEY_IDS['physicalLiteracy3to5'],
     'QID1715170192': {
         mediaSrc: '',
         mediaSrc1: 'kids_playing_video',

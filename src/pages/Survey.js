@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import SurveyHeading from '../components/SurveyHeading/SurveyHeading';
 import SurveyFooter from '../components/SurveyFooter/SurveyFooter';
 import QuestionsBlock from '../components/QuestionsBlock/QuestionsBlock';
+//import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
 import {getGradeImage, getConfig} from '../util/data';
 import api from '../util/api';
 import './pages.css';
 
 const Survey = () => {
+    const navigate = useNavigate();
     const { surveyId } = useParams();
     const config = getConfig(surveyId);
     const [sessionId, setSessionId] = useState(null);
@@ -15,6 +17,17 @@ const Survey = () => {
     const [responses, setResponses] = useState({});
     const [surveyDone, setSurveyDone] = useState(false);
     const responseKeys = Object.keys(responses);
+
+    const startSession = async (uid) => {
+        if (!sessionId) {
+            const getResponse =  await api.startSurveySession(surveyId, uid);
+            setSessionId(getResponse.result.sessionId);
+    
+            const updateResponse = await api.updateSurveySession(surveyId, getResponse.result.sessionId, {});
+            setQuestions(updateResponse.result.questions);
+            setResponses(updateResponse.result.responses);
+        }
+    };
 
     const updateSession = async (close=false) => {
         const updateResponse = await api.updateSurveySession(surveyId, sessionId, responses, close);
@@ -35,7 +48,7 @@ const Survey = () => {
         updateSession(true);
     };
 
-    const selectAnswer = (questionId, questionType, answer) => {
+    const selectAnswer = (questionId, questionType, answer/*, multipleAnswersAccepted*/) => {
         let responseAnswer;
 
         switch(questionType) {
@@ -56,19 +69,16 @@ const Survey = () => {
         });
     };
 
-    useEffect(() => {  
-        const startSession = async () => {
-            if (!sessionId) {
-                const getResponse =  await api.startSurveySession(surveyId);
-                setSessionId(getResponse.result.sessionId);
-        
-                const updateResponse = await api.updateSurveySession(surveyId, getResponse.result.sessionId, {});
-                setQuestions(updateResponse.result.questions);
-                setResponses(updateResponse.result.responses);
-            }
-        };
-        startSession();
-    }, [surveyId, sessionId]);
+   useEffect(() => {  
+        if (localStorage.getItem('survUid')) {
+            startSession(localStorage.getItem('survUid'));
+            localStorage.removeItem('survUid');
+        }
+        else {
+            navigate(`/registration/${surveyId}`);
+        }
+    // eslint-disable-next-line
+    }, []);
 
     return (
         <div className="survey">
@@ -82,6 +92,7 @@ const Survey = () => {
                 responses={responses} 
                 onAnswerSelect={selectAnswer} />
                 
+
             <SurveyFooter    
                 goNext={goNext}
                 goPrevious={goPrevious}

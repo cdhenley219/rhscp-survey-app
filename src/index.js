@@ -10,8 +10,7 @@ import {faThumbsUp, faThumbsDown,faHand,faFaceSmileBeam,faFaceGrimace,faFaceFlus
 import './index.css';
 import SurveySelectionsPage from './pages/SurveySelections';
 import SurveyPage from './pages/Survey';
-import Signup from './pages/Signup';
-import Login from './pages/Login';
+import SignupPage from './pages/Signup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -20,22 +19,20 @@ const router = createBrowserRouter([
     element: <SurveySelectionsPage/>,
   },
   {
-    path: 'survey/:surveyId',
+    path: '/survey/:surveyId',
     element: <SurveyPage/>
   }, 
   {
-    path: '/signup',
-    element: <Signup/>,
+    path: '/registration/:surveyId',
+    element: <SignupPage/>,
   },
   {
-    path: '/login',
-    element: <Login/>,
+    path: '*',
+    element: <SurveySelectionsPage/>
   }
 ]);
 
 library.add(fab, faThumbsUp, faThumbsDown,faHand,faFaceSmileBeam,faFaceGrimace,faFaceFlushed,faFaceMeh,faFaceRollingEyes,faFaceSmile,faFaceFrown,faFaceTired);
 root.render(
-  <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
 );

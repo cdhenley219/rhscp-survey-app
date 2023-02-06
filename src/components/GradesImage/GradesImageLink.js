@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import GradesImage from "./GradesImage";
 
 const GradesImageLink = ({name, url}) => (
-    <a href={url}>
+    <Link to={url}>
         <GradesImage name={name} />
-    </a>
+    </Link>
 );
 
 export default GradesImageLink;

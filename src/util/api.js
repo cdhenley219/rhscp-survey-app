@@ -4,9 +4,12 @@ const headers = {
     'Content-Type': 'application/json'
 }; 
 
-const startSurveySession = async (surveyId) => {
+const startSurveySession = async (surveyId, uid) => {
     const body = JSON.stringify({
-        language: 'EN'
+        language: 'EN'/*,
+        embeddedData: {
+            uid //could also be Q_UID, as that's how it'll be defined in Qualtrics
+        }*/
     });    
 
     try {

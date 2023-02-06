@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import './survey-footer.css';
 
 const SurveyFooter = ({ previousButtonShown=false, 
@@ -6,10 +7,10 @@ const SurveyFooter = ({ previousButtonShown=false,
                         finishButtonShown=false,
                         goNext=()=>{}, goPrevious=()=>{}, goFinish=()=>{}
                     }) => {
-        
+        const navigate = useNavigate();
         const handleFinish = () => {
             goFinish();
-            window.location.href = '/';
+            navigate('/');
         };
 
         return (

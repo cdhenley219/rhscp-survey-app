@@ -1,15 +1,10 @@
-import { useRef } from 'react';
-import useSlide from '../../hooks/useSlide';
 import QuestionText from '../QuestionText/QuestionText';
 import AnswerText from '../AnswerText/AnswerText';
 import './text-multiple-choice.css';
 
 const TextMultipleChoice = ({question, response={}, config, onSelect, /*selectedAnswers, onSelect=()=>{},*/ multipleAnswersAccepted=false}) => {
-    const containerEl = useRef(null);
-    useSlide('left', containerEl, question.questionId);
-
     return (
-        <div className="survey-multiple-choice" ref={containerEl}>
+        <div className="survey-multiple-choice">
             <QuestionText question={question} config={config}/>
         
             <div>

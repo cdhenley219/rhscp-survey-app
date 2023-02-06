@@ -8,7 +8,7 @@ export const getConfig = (surveyId) => {
         case 'SV_cxcoJ9iKSkUCbIi': return physicalLiteracyKto2Config;
         case 'SV_cRYrYE4uneyaFMy': return physicalLiteracy3to5Config;
         case 'SV_6QpwvgxC7YRqSj4': return physicalLiteracy6to8Config;
-        default: return [];
+        default: return {};
     }
 }
 

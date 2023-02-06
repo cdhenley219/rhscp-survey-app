@@ -25,12 +25,12 @@
 
 
 .survey-footer .go-button:hover { 
-background-color: midnightblue;
-color:white; 
+background-color: #5bbfeb;
+color:black; 
 }
 .finish-button:hover { 
-background-color: black;
-color:white; 
+background-color: #5bbfeb;
+color:black; 
 }
 
 
@@ -46,7 +46,7 @@ color:white;
     border: 1px solid #999999 !important;
     background-color: #cccccc !important;
     color: #666666 !important;
-    cursor: not-allowed !important;
+    cursor: not-allowed !important; 
 }
 
 /* added style to icons | jg */
