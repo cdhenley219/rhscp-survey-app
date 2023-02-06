@@ -75,7 +75,6 @@ const Survey = () => {
             localStorage.removeItem('survUid');
         }
         else {
-            //window.location.href = `registration/${surveyId}`;
             navigate(`/registration/${surveyId}`);
         }
         
@@ -87,7 +86,6 @@ const Survey = () => {
                 gradesImageName={getGradeImage(config.grades)} 
                 title={config.title}/>
 
-            {/* <MatchingChoices/> */}
             <QuestionsBlock 
                 questions={questions} 
                 config={config} 

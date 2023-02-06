@@ -11,7 +11,6 @@ const SurveyFooter = ({ previousButtonShown=false,
         const handleFinish = () => {
             goFinish();
             navigate('/');
-           // window.location.href = '/';
         };
 
         return (

@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { getConfig } from '../util/data';
-import './Signup.css'; //CSS code for Signup and login form
 import Logo from '../components/Logo/Logo';
+import './Signup.css'; //CSS code for Signup and login form
+
 export default function Signup() {
 
 const navigate = useNavigate();
@@ -17,32 +19,27 @@ const [grade, setGrade] = useState('');
 const [birthdate, setBirthDate] = useState('');
 
 // States for checking the errors
-const [submitted, setSubmitted] = useState(false);
 const [error, setError] = useState(false);
 const [gradeInvalid, setGradeInvalid] = useState(false);
 
 // Handling the First Name change
 const handleFirstName = (e) => {
     setFirstName(e.target.value);
-    setSubmitted(false);
 };
 
 // Handling the Last Name change
 const handleLastName = (e) => {
     setLastName(e.target.value);
-    setSubmitted(false);
 };
 
 // Handling the Grade change
 const handleGrade = (e) => {
     setGrade(e.target.value);
-    setSubmitted(false);
 };
 
 // Handling the Birthdate change
 const handleBirthDate = (e) => {
     setBirthDate(e.target.value);
-    setSubmitted(false);
 };
 
 
@@ -60,19 +57,20 @@ const isGradeSelectionValid = grade => {
     }
 };
 
-const getUniqueId = () => {
+const uniqueId = () => {
     const dateObj = new Date(birthdate);
     const month = dateObj.getMonth() + 1;
     const date = dateObj.getDate() + 1;
     const monthStr = month < 10 ? `0${month}` : `${month}`;
     const dateStr = date < 10 ? `0${date}` : `${date}`;
-    return `${fname[0]}${lname[0]}${monthStr}${dateStr}${grade[0]}`;
+    return `${fname[0].toUpperCase()}${lname[0].toUpperCase()}${monthStr}${dateStr}${grade[0]}`;
 }
 
 
 // Handling the form submission
 const handleSubmit = (e) => {
-    e.preventDefault();
+    setError(false);
+    setGradeInvalid(false);
     if (fname === '' || lname === '' || grade === '' || birthdate === '') {
         setError(true);
     } 
@@ -80,37 +78,43 @@ const handleSubmit = (e) => {
         setGradeInvalid(true);
     }
     else {
-        setSubmitted(true);
         setError(false);
         setGradeInvalid(false);
+        localStorage.setItem('survUid', uniqueId());
+        navigate(`/survey/${surveyId}`);
     }
-    localStorage.setItem('survUid', getUniqueId());
-    navigate(`/survey/${surveyId}`);
 };
 
 // Showing error message if error is true
 const errorMessage = () => (
     <>
    { error && <div className="error">
-        <h1>Please enter all the fields</h1> 
+        <h1>Please enter all fields</h1> 
     </div> 
     }
 
     { gradeInvalid && <div className="error">
-        <h1>Invalid Grade</h1>
+        <h1>Wrong Grade</h1>
     </div>
     }
     </>
 );
 
+useEffect(() => {
+    if (Object.keys(config).length === 0) {
+        navigate('/');
+    }
+}, [config]);
 
 return (
 <div className="signupform">
     <div>
-
         <div className='signupformHeader'>
-            <Logo />
-                <h1>Online Assessments Signup</h1>
+            <Link to="/">
+                <Logo />
+            </Link>
+            
+            <h1>Online Assessments</h1>
         </div>
     </div>
 
@@ -142,7 +146,7 @@ return (
             <input onChange={handleBirthDate} className="input" value={birthdate} type="date" />
         </div>
 
-        <button onClick={handleSubmit} className="btn" type="submit">Go to Assessment</button>
+        <button onClick={handleSubmit} className="btn" type="button">Go to Assessment</button>
     </form>
 </div>
 );
