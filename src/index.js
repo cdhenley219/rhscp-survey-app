@@ -34,7 +34,5 @@ const router = createBrowserRouter([
 
 library.add(fab, faThumbsUp, faThumbsDown,faHand,faFaceSmileBeam,faFaceGrimace,faFaceFlushed,faFaceMeh,faFaceRollingEyes,faFaceSmile,faFaceFrown,faFaceTired);
 root.render(
-  <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
 );

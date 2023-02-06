@@ -11,7 +11,6 @@ const QuestionsBlock = ({questions, config, responses, onAnswerSelect}) => {
     useSlide('left', containerEl, config.surveyId);
 
     const getQuestionComponent = (question, questionConfig) => {
-
         switch(question.type){
             case 'mc':
                 if (questionConfig.isMediaMC) {
