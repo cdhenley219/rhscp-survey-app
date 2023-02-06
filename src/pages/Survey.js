@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import SurveyHeading from '../components/SurveyHeading/SurveyHeading';
 import SurveyFooter from '../components/SurveyFooter/SurveyFooter';
 import QuestionsBlock from '../components/QuestionsBlock/QuestionsBlock';
-import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
+//import MatchingChoices from '../components/MatchingChoices/MatchingChoices';
 import {getGradeImage, getConfig} from '../util/data';
 import api from '../util/api';
 import './pages.css';
@@ -48,7 +48,7 @@ const Survey = () => {
         updateSession(true);
     };
 
-    const selectAnswer = (questionId, questionType, answer) => {
+    const selectAnswer = (questionId, questionType, answer/*, multipleAnswersAccepted*/) => {
         let responseAnswer;
 
         switch(questionType) {

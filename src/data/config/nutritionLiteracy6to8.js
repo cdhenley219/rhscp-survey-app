@@ -1,18 +1,19 @@
 const nutritionLiteracy6to8Config = {
-    title: 'Physical Literacy Assessment',
+    title: 'Nutrition Literacy Assessment',
+    surveyId: SURVEY_IDS['nutritionLiteracy6to8'],
     grades: '6-8',
 /*TThere are many skills needed to cook and prepare the foods we eat every day. 
 Please circle the answer based on whether you can do each skill 
 “all by yourself”, “with a little help”, “with a lot of help”, or “not at all”.*/
 
 /* I can use a knife to cut up food into smaller pieces, like cutting a cucumber or carrot into slices.*/
-'1': {
+'QID107': {
     mediaSrc: 'cutting_board',
     isMediaMC: true,
 },
 
 /*I can use a measuring cup to measure ingredients, like milk or flour.*/
-'2': {
+'QID108': {
     mediaSrc: 'measuring_cup',
     isMediaMC: true,
 },

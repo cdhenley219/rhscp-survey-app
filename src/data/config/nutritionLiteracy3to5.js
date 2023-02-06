@@ -1,7 +1,7 @@
 const nutritionLiteracy3to5Config = {
-    title: 'Physical Literacy Assessment',
+    title: 'Nutrition Literacy Assessment',
+    surveyId: SURVEY_IDS['nutritionLiteracy3to5'],
     grades: '3-5',
-    surveyId: '1',
     
 /*The vegetables we eat every day come from different parts of vegetable plants. 
 Draw a line to match each vegetable to the plant part it comes from.*/

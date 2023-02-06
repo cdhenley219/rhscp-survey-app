@@ -2,19 +2,20 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { getConfig } from '../util/data';
+import { GRADES, SCHOOLS } from '../data/constants';
 import Logo from '../components/Logo/Logo';
 import './Signup.css'; //CSS code for Signup and login form
 
 export default function Signup() {
 
 const navigate = useNavigate();
-const grades = ['Kindergarten', '1st', '2nd', '3rd', '4th', '5th', '6th','7th', '8th'];
 const { surveyId } = useParams();
 const config = getConfig(surveyId);
 
 // States for registration
 const [fname, setFirstName] = useState('');
 const [lname, setLastName] = useState('');
+const [school, setSchool] = useState('');
 const [grade, setGrade] = useState('');
 const [birthdate, setBirthDate] = useState('');
 
@@ -31,6 +32,12 @@ const handleFirstName = (e) => {
 const handleLastName = (e) => {
     setLastName(e.target.value);
 };
+
+// Handling the School change
+const handleSchool = (e) => {
+    setSchool(e.target.value);
+};
+
 
 // Handling the Grade change
 const handleGrade = (e) => {
@@ -71,7 +78,7 @@ const uniqueId = () => {
 const handleSubmit = (e) => {
     setError(false);
     setGradeInvalid(false);
-    if (fname === '' || lname === '' || grade === '' || birthdate === '') {
+    if (fname === '' || lname === '' || school === '' || grade === '' || birthdate === '') {
         setError(true);
     } 
     else if (!isGradeSelectionValid(grade)) {
@@ -104,7 +111,7 @@ useEffect(() => {
     if (Object.keys(config).length === 0) {
         navigate('/');
     }
-}, [config]);
+}, [config, navigate]);
 
 return (
 <div className="signupform">
@@ -132,11 +139,21 @@ return (
             <label className="label">Last Name</label>
             <input onChange={handleLastName} className="input" value={lname} type="text" />
 
+            <label className="label">School</label>
+            <select onChange={handleSchool} className="input" value={school} type="text" >
+                <>
+                <option key="-1"></option>
+                {SCHOOLS.map ((aSchool, index) => (
+                    <option key={index}>{aSchool}</option>
+                ))}
+                </>
+            </select>
+
             <label className="label">Grade</label>
             <select onChange={handleGrade} className="input" value={grade} type="number" >
                 <>
                 <option key="-1"></option>
-                {grades.map ((grade, index) => (
+                {GRADES.map ((grade, index) => (
                     <option key={index}>{grade}</option>
                 ))}
                 </>

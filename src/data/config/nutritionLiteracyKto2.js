@@ -1,5 +1,6 @@
 const nutritionLiteracyKto2Config = {
-    surveyId: '1',
+    title: 'Nutrition Literacy Assessment',
+    surveyId: SURVEY_IDS['nutritionLiteracyKto2'],
     grades: 'K-2',
 
 /*The vegetables we eat every day come from different parts of vegetable plants. 

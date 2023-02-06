@@ -1,5 +1,6 @@
+import { SURVEY_IDS } from "../constants";
 const physicalLiteracyKto2Config = {
-    surveyId: 'SV_cxcoJ9iKSkUCbIi',
+    surveyId: SURVEY_IDS['physicalLiteracyKto2'],
     grades: 'K-2',
     'QID1': {
         mediaSrc: '',
