@@ -69,7 +69,7 @@ const Survey = () => {
         });
     };
 
-   useEffect(() => {  
+   /*useEffect(() => {  
         if (localStorage.getItem('survUid')) {
             startSession(localStorage.getItem('survUid'));
             localStorage.removeItem('survUid');
@@ -78,7 +78,7 @@ const Survey = () => {
             navigate(`/registration/${surveyId}`);
         }
     // eslint-disable-next-line
-    }, []);
+    }, []);*/
 
     return (
         <div className="survey">

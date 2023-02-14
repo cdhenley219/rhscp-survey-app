@@ -7,7 +7,6 @@ import Logo from '../components/Logo/Logo';
 import './Signup.css'; //CSS code for Signup and login form
 
 export default function Signup() {
-
 const navigate = useNavigate();
 const { surveyId } = useParams();
 const config = getConfig(surveyId);
@@ -107,11 +106,11 @@ const errorMessage = () => (
     </>
 );
 
-useEffect(() => {
+/*useEffect(() => {
     if (Object.keys(config).length === 0) {
         navigate('/');
     }
-}, [config, navigate]);
+}, [config, navigate]);*/
 
 return (
 <div className="signupform">

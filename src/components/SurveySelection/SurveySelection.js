@@ -12,9 +12,9 @@ const SurveySelection = ({title, imageName, gradeKTo2SurveyId, grade3To5SurveyId
             <div className="survey-selections-item__links">
                 <div className="survey-selections-item__links_title">Select an Assessment</div>
                 <div className="survey-selections-item__links_content">
-                        { gradeKTo2SurveyId && <GradesImageLink name="apple" url={ `/registration/${gradeKTo2SurveyId}`} /> }
-                        { grade3To5SurveyId && <GradesImageLink name="blue_book" url={`/registration/${grade3To5SurveyId}`} /> }
-                        { grade6To8SurveyId && <GradesImageLink name="board" url={`/registration/${grade6To8SurveyId}`} /> }
+                        { gradeKTo2SurveyId && <GradesImageLink name="apple" url={ `/survey/${gradeKTo2SurveyId}`} /> }
+                        { grade3To5SurveyId && <GradesImageLink name="blue_book" url={`/survey/${grade3To5SurveyId}`} /> }
+                        { grade6To8SurveyId && <GradesImageLink name="board" url={`/survey/${grade6To8SurveyId}`} /> }
 
                 </div>
             </div>
