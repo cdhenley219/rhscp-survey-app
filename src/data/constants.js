@@ -4,10 +4,7 @@ export const SURVEY_IDS = {
     physicalLiteracy6to8: 'SV_6QpwvgxC7YRqSj4',
     nutritionLiteracyKto2: 'SV_e3RzOF9lyFcrIbk',
     nutritionLiteracy3to5: 'SV_7QK1grxGAy2xUqO',
-    nutritionLiteracy6to8: 'SV_eKcigmNYh0jXDZY',
-    foodFrequencyKto2: 'SV_by256XyCdwqLwua',//'SV_9nsnoihZKZ1lMmW',
-    foodFrequency3to5: '', //no survey found 
-    foodFrequency6to8: 'SV_3WTGCtGDya3Lbim'
+    nutritionLiteracy6to8: 'SV_by256XyCdwqLwua'
 };
 
 export const SCHOOLS = [
@@ -17,4 +14,7 @@ export const SCHOOLS = [
     'Greater Brunswick Charter School, New Brunswick'
 ];
 
-export const GRADES = ['K', '1', '2', '3', '4', '5', '6','7', '8'];
+export const GRADES = ['K', '1st', '2nd', '3rd', '4th', '5th', '6th','7th', '8th'];
+export const GRADES_1 = ['K', '1st', '2nd'];
+export const GRADES_2 = ['3rd', '4th', '5th'];
+export const GRADES_3 = ['6th','7th', '8th'];

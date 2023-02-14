@@ -9,8 +9,6 @@ const SurveySelections = () => {
         
         <div className="survey-selections__row">
             <SurveySelection title="Nutrition" imageName="nutrition"
-                              gradeKTo2SurveyId={SURVEY_IDS['nutritionLiteracyKto2']}
-                              grade3To5SurveyId={SURVEY_IDS['nutritionLiteracy3to5']}
                               grade6To8SurveyId={SURVEY_IDS['nutritionLiteracy6to8']}/>
             <SurveySelection title="Physical Activity" 
                               imageName="physical-activity" 
@@ -19,12 +17,12 @@ const SurveySelections = () => {
                               grade6To8SurveyId={SURVEY_IDS['physicalLiteracy6to8']}/>
           </div>
     
-          <div className="survey-selections__row">
+          {/* <div className="survey-selections__row">
             <SurveySelection title="Food Frequency" imageName="child-eating"
                               gradeKTo2SurveyId={SURVEY_IDS['foodFrequencyKto2']}
                               grade3To5SurveyId={SURVEY_IDS['foodFrequency3to5']}
                               grade6To8SurveyId={SURVEY_IDS['foodFrequency6to8']}/>
-          </div>
+          </div> */}
       </div>
 
     );
